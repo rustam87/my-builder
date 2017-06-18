@@ -1,5 +1,12 @@
 body {
   margin: 0;
+  font-family: "SansusWebissimo", sans-serif;
 }
 
+@import 'common/fonts';
 @import 'common/greating';
+@import 'common/sprite-raster';
+
+body {
+  @include sprite($viking);
+}

@@ -1,0 +1,51 @@
+
+
+$basePath: '../fonts/';
+$robotoPath: $basePath + 'Roboto/';
+$sansusWebissimoPath: $basePath + 'SansusWebissimo/';
+
+@each $font in
+        SansusWebissimo,
+        Sansus-Webissimo-Regular {
+
+    $fullSansusWebissimoPath: $sansusWebissimoPath + $font;
+
+    @font-face {
+        font-family: '#{$font}';
+        src: url($fullSansusWebissimoPath + '.woff') format('woff'),
+        url($fullSansusWebissimoPath + '.ttf') format('truetype'),
+        url($fullSansusWebissimoPath + '.svg#' + $font) format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@each $font in
+        Roboto-Bold,
+        Roboto-BoldItalic,
+        Roboto-Italic,
+        Roboto-Light,
+        Roboto-LightItalic,
+        Roboto-Medium,
+        Roboto-MediumItalic,
+        Roboto-Regular {
+
+    $fullRobotoPath: $robotoPath + $font;
+
+    @font-face {
+        font-family: '#{$font}';
+        src: url($fullRobotoPath + '.eot');
+        src: url($fullRobotoPath + '.woff2') format('woff2'),
+        url($fullRobotoPath + '.woff') format('woff'),
+        url($fullRobotoPath + '.ttf') format('truetype'),
+        url($fullRobotoPath + '.svg#' + $font) format('svg'),
+        url($fullRobotoPath + '.eot?#iefix') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+
+
+
+
