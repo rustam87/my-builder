@@ -1,6 +1,6 @@
 'use strict';
 
-const imgSpritePath = $.config.root + '/assets/img/spites/raster/';
+const imgSpritePath = $.config.root + '/assets/img/sprites/raster/';
 const CSSSpritePath = $.config.src + '/style/common/';
 
 module.exports = function () {
@@ -8,7 +8,7 @@ module.exports = function () {
     $.gulp.task('sprite:raster', function () {
 
         var spriteData =
-            $.gulp.src('./source/images/*.*')
+            $.gulp.src('./source/images/icons/*.*')
 
             .pipe($.gp.spritesmith({
                 imgName: 'sprite.png',

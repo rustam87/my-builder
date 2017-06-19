@@ -6,7 +6,3 @@ body {
 @import 'common/fonts';
 @import 'common/greating';
 @import 'common/sprite-raster';
-
-body {
-  @include sprite($viking);
-}
