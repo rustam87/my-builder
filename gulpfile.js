@@ -11,7 +11,7 @@ global.$ = {
   },
   gulp: require('gulp'),
   del: require('del'),
-  browserSync: require('browser-sync').create(),
+  //browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
 };
 
@@ -33,7 +33,7 @@ $.gulp.task('default', $.gulp.series(
       'sprite:svg'
   ),
   $.gulp.parallel(
-      'watch',
-      'serve'
+      'watch'
+      //'serve'
   )
 ));
