@@ -2,6 +2,7 @@
     text-align: center;
     color: #FFF;
 
+
     &__pic {
        border-radius: 50%;
         margin-bottom: 20px;
@@ -19,5 +20,15 @@
     &__social {
         margin-top: 35px;
         margin-bottom: 40px;
+    }
+}
+
+.user-auth {
+    color: #FFF;
+    padding: 0 20px;
+    text-align: center;
+
+    &__title {
+        margin-top: 0;
     }
 }

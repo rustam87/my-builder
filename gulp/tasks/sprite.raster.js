@@ -12,6 +12,7 @@ module.exports = function () {
 
             .pipe($.gp.spritesmith({
                 imgName: 'sprite.png',
+                imgPath: '../img/sprites/raster/sprite.png',
                 cssName: 'sprite-raster.scss'
             }))
 

@@ -10,6 +10,10 @@
            background-color: $brown;
            display: inline-block;
            text-decoration: none;
+
+           &:hover {
+               background-color: $brown-darken;
+           }
        }
     }
 

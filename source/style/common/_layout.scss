@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
 
+
     &__top {
         width: 100%;
         padding: 20px;
@@ -20,6 +21,7 @@
         width: 380px;
         background-color: $light-brown;
         padding-top: 40px;
+        border-radius: 5px;
     }
 
     &__bottom {
