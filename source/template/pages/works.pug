@@ -1,0 +1,101 @@
+extends ../_template
+
+block variables
+    - var title = 'Another page'
+
+block content
+    section.user-section.section
+        .user-section__top
+            include ../modules/social.pug
+            svg(width=40,height=35, class="svg svg--color-white")
+                use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
+        .user-section__center
+            .user
+                img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
+                .user__title Аблызалов Рустам
+                .user__subtitle Личный сайт веб разработчика
+        .user-section__bottom
+    section.porfolio-section.section
+        h1.porfolio-section__title Мои работы
+        .portfolio
+            .portfolio-main-site
+                .site-example
+                    h3 Сайт школы онлайн<br> Образования
+                    .border-block
+                        .border-block__text HTML, CSS, JAVASCRIPT
+                    a(href="#" class="btn") Посмотреть сайт
+
+            .portfolio-other-sites
+                .portfolio-other-sites__main
+                    img(src="assets/img/works/site-1.png")
+                .portfolio-other-sites__other
+                .portfolio-other-sites__other
+    section.about-me-section.section
+        h1 Что обо мне<br>говорят
+        .comments
+            .comment
+                .comment__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только                   самых тяжелых испытаний и бессонных ночей!
+                .author
+                    .author-pic
+                        img(src="assets/img/works/author-1.png")
+                    .author-describe
+                        .author-describe__name Ковальчук Дмитрий
+                        .author-describe__position основатель Loftschool
+
+            .comment
+                .comment__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только                   самых тяжелых испытаний и бессонных ночей!
+                .author
+                    .author-pic
+                        img(src="assets/img/works/author-2.png")
+                    .author-describe
+                        .author-describe__name Сабанцев Владимир
+                        .author-describe__position преподаватель
+
+
+        form.callback-form
+            h3.callback-form__title Связаться со мной
+            .callback-form__form
+                .form-control
+                    input(placeholder="Имя").form-control__field.form-control__field--width-100
+                .form-control
+                    input(placeholder="Email").form-control__field.form-control__field--width-100
+                .form-control
+                    textarea(placeholder="Ваше сообщение").form-control__field.form-control__field--width-100
+            .callback-form__buttons-block.btn-group
+                button.btn Отправить
+                button.btn Очистить
+    .footer
+        .footer-wrapper
+            .footer-column.left-column
+                .footer-column__text.footer-column__text--color-white  Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool.
+                .footer-column__text  © Рустам Аьлызалов<br> с любовью в LoftSchool | 2017
+            .footer-column.middle-column
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="#") Мои работы
+                    li.footer-menu__item
+                        a(href="#") Обо мне
+                    li.footer-menu__item
+                        a(href="#") Блог
+                    li.footer-menu__item
+                        a(href="#") Авторизация
+                include ../modules/social.pug
+            .footer-column.right-column
+                ul.contacts
+                    li.contacts__item skype_kdn
+                    li.contacts__item astahov@gmail.com
+                    li.contacts__item +7 931 200 93 24
+                    li.contacts__item Новосибирск, ул. Инская, д.14
+
+
+
+
+
+
+
+
+
+
+
+
+
