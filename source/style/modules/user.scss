@@ -25,10 +25,24 @@
 
 .user-auth {
     color: #FFF;
-    padding: 0 20px;
     text-align: center;
+
+    &__form {
+        padding: 0 20px;
+    }
 
     &__title {
         margin-top: 0;
+    }
+
+    &__check {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &__check-repeat {
+
+        margin-bottom: 30px;
     }
 }
