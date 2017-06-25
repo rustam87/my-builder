@@ -18,7 +18,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 4.5rem;
-    line-height: 0.88;
+    line-height: 1;
 
     &:before {
         @include sprite($h1-pouches-left);

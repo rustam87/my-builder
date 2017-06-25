@@ -31,6 +31,18 @@
     }
 }
 
+.section {
+    padding-top: 70px;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &__header {
+        margin-top: 0;
+    }
+}
+
 .footer {
     background-color: $darken-gray;
     padding: 30px;
