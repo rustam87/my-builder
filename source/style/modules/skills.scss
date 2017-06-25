@@ -1,0 +1,41 @@
+
+.skill-direction {
+    margin-bottom: 40px;
+
+    &__header {
+        color: $gray-type-4;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__skills {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.skills__item + .skills__item {
+    margin-left: 37px;
+}
+
+.skill {
+    position: relative;
+    width: 110px;
+    height: 110px;
+
+
+    &__name {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: $orange-type-1;
+        font-size: 0.93rem;
+        text-align: center;
+    }
+}
+
+
+
+

@@ -1,3 +1,4 @@
+// COMMMON
 @import 'common/_normalize';
 @import 'common/_variables';
 @import 'common/sprite-raster';
@@ -8,7 +9,7 @@
 @import 'common/_forms';
 
 
-
+// MODULES
 @import 'modules/user';
 @import 'modules/text';
 @import 'modules/menu';
@@ -18,8 +19,12 @@
 @import 'modules/comments';
 @import 'modules/author';
 @import 'modules/callback-form';
+@import 'modules/skills';
+@import 'modules/map';
+@import 'modules/contacts';
 
 
+// PAGES
 @import 'pages/index';
 @import 'pages/works';
 @import 'pages/about_me';
