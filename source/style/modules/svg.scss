@@ -1,18 +1,69 @@
 .svg {
 
-    &--color-white {
+    &--color-beige {
         fill: #F5E7DB;
+    }
 
-        &:hover {
-            fill: #FFF;
-        }
+    &--color-white {
+        fill: #FFF;
     }
 
     &--color-gray {
         fill: #C3CBCD;
     }
 
+    &--color-light-gray {
+        fill: #a8a8a5;
+    }
+
     &--color-orange {
         fill: $orange-type-2;
     }
+
+
+
+    &--hover-color-white {
+
+        &:hover {
+            fill: #FFF;
+        }
+
+    }
+
+    &--hover-color-orange {
+
+        &:hover {
+            fill: $orange-type-2;
+        }
+
+    }
+
+    &--hover-color-beige {
+
+        &:hover {
+            fill: #F5E7DB;
+        }
+
+    }
+
+
+    &--hover-color-light-gray {
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
 }
+
+
+.traingle {
+    position: absolute;
+    bottom: 0;
+    fill: $gray-type-7;
+
+    &__header {
+        position: absolute;
+    }
+}
+

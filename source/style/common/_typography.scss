@@ -30,6 +30,18 @@ h1 {
         @include sprite($h1-pouches-right);
         margin-left: 40px;
     }
+
+    &.white {
+        color: #FFF;
+
+        &:before {
+            @include sprite($h1-pouches-left-white);
+        }
+
+        &:after {
+            @include sprite($h1-pouches-right-white);
+        }
+    }
 }
 
 h3 {
@@ -45,6 +57,18 @@ h3 {
     &:after {
         @include sprite($h3-pouches-right);
         margin-left: 10px;
+    }
+
+    &.white {
+        color: #FFF;
+
+        &:before {
+            @include sprite($h3-pouches-left-white);
+        }
+
+        &:after {
+            @include sprite($h3-pouches-right-white);
+        }
     }
 }
 

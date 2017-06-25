@@ -11,6 +11,10 @@
     &__form {
         padding: 20px;
         padding-top: 0;
+
+        textarea {
+            min-height: 140px;
+        }
     }
 
     &__buttons-block {

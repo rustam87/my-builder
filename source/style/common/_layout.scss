@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: space-between;
 
-
     &__top {
         width: 100%;
         padding: 20px;
@@ -31,6 +30,12 @@
     }
 }
 
+.section-wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 172px;
+}
+
 .section {
     padding-top: 70px;
 
@@ -44,7 +49,10 @@
 }
 
 .footer {
-    background-color: $darken-gray;
+    position: relative;
+    z-index: 1;
+    margin-top: -172px;
+    background-color: rgba(55, 62, 66, 0.85);
     padding: 30px;
 
     &-wrapper {
