@@ -1,0 +1,18 @@
+.svg {
+
+    &--color-white {
+        fill: #F5E7DB;
+
+        &:hover {
+            fill: #FFF;
+        }
+    }
+
+    &--color-gray {
+        fill: #C3CBCD;
+    }
+
+    &--color-orange {
+        fill: $orange-type-2;
+    }
+}

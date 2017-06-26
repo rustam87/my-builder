@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.user-section {
+    padding-top: 0;
+    min-height: 604px;
+    background: url($src_img_path + '/works/user-section-bg.jpg') 50%;
+    background-position: 50% 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+
+    &__bottom {
+        min-height: 102px;
+    }
+}
+
+.about-me-section {
+    min-height: 1139px;
+    background: url($src_img_path + '/works/about-me-bg.jpg');
+    background-position: 50%;
+    background-size: cover;
+
+    &__comments {
+        margin-bottom: 70px;
+    }
+}
+
