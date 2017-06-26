@@ -1,0 +1,28 @@
+.comments {
+    display: flex;
+    width: 750px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.comment {
+    width: 363px;
+
+    &__text {
+        padding-top: 56px;
+        position: relative;
+        color: $gray-type-4;
+        line-height: 1.6;
+        font-size: 1.16rem;
+        margin-bottom: 25px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($citate);
+            top: 0;
+            left: 0;
+
+        }
+    }
+}
