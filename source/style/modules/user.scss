@@ -1,0 +1,49 @@
+.user {
+    text-align: center;
+    color: #FFF;
+
+
+    &__pic {
+       border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 1.16rem;
+    }
+
+    &__social {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+}
+
+.user-auth {
+    color: #FFF;
+    text-align: center;
+
+    &__form {
+        padding: 0 20px;
+    }
+
+    &__title {
+        margin-top: 0;
+        color: #FFF;
+    }
+
+    &__check {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &__check-repeat {
+
+        margin-bottom: 30px;
+    }
+}

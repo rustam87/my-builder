@@ -1,0 +1,24 @@
+.author {
+    display: flex;
+    align-items: center;
+
+    &-pic {
+        margin-right: 22px;
+    }
+}
+
+
+.author-describe {
+    font-size: 1.16rem;
+    &__name {
+        color: $orange-type-1;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    &__position {
+        color: $orange-type-1;
+        font-weight: 400;
+    }
+}
+

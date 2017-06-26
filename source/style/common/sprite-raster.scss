@@ -1,0 +1,255 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$bank-building-name: 'bank-building';
+$bank-building-x: 0px;
+$bank-building-y: 0px;
+$bank-building-offset-x: 0px;
+$bank-building-offset-y: 0px;
+$bank-building-width: 40px;
+$bank-building-height: 48px;
+$bank-building-total-width: 140px;
+$bank-building-total-height: 98px;
+$bank-building-image: '../img/sprites/raster/sprite.png';
+$bank-building: (0px, 0px, 0px, 0px, 40px, 48px, 140px, 98px, '../img/sprites/raster/sprite.png', 'bank-building', );
+$check-name: 'check';
+$check-x: 121px;
+$check-y: 14px;
+$check-offset-x: -121px;
+$check-offset-y: -14px;
+$check-width: 12px;
+$check-height: 9px;
+$check-total-width: 140px;
+$check-total-height: 98px;
+$check-image: '../img/sprites/raster/sprite.png';
+$check: (121px, 14px, -121px, -14px, 12px, 9px, 140px, 98px, '../img/sprites/raster/sprite.png', 'check', );
+$checkbox-active-name: 'checkbox-active';
+$checkbox-active-x: 100px;
+$checkbox-active-y: 35px;
+$checkbox-active-offset-x: -100px;
+$checkbox-active-offset-y: -35px;
+$checkbox-active-width: 21px;
+$checkbox-active-height: 20px;
+$checkbox-active-total-width: 140px;
+$checkbox-active-total-height: 98px;
+$checkbox-active-image: '../img/sprites/raster/sprite.png';
+$checkbox-active: (100px, 35px, -100px, -35px, 21px, 20px, 140px, 98px, '../img/sprites/raster/sprite.png', 'checkbox-active', );
+$checkbox-name: 'checkbox';
+$checkbox-x: 100px;
+$checkbox-y: 76px;
+$checkbox-offset-x: -100px;
+$checkbox-offset-y: -76px;
+$checkbox-width: 20px;
+$checkbox-height: 20px;
+$checkbox-total-width: 140px;
+$checkbox-total-height: 98px;
+$checkbox-image: '../img/sprites/raster/sprite.png';
+$checkbox: (100px, 76px, -100px, -76px, 20px, 20px, 140px, 98px, '../img/sprites/raster/sprite.png', 'checkbox', );
+$citate-name: 'citate';
+$citate-x: 30px;
+$citate-y: 48px;
+$citate-offset-x: -30px;
+$citate-offset-y: -48px;
+$citate-width: 33px;
+$citate-height: 27px;
+$citate-total-width: 140px;
+$citate-total-height: 98px;
+$citate-image: '../img/sprites/raster/sprite.png';
+$citate: (30px, 48px, -30px, -48px, 33px, 27px, 140px, 98px, '../img/sprites/raster/sprite.png', 'citate', );
+$ckeckbox-active-name: 'ckeckbox-active';
+$ckeckbox-active-x: 120px;
+$ckeckbox-active-y: 55px;
+$ckeckbox-active-offset-x: -120px;
+$ckeckbox-active-offset-y: -55px;
+$ckeckbox-active-width: 20px;
+$ckeckbox-active-height: 20px;
+$ckeckbox-active-total-width: 140px;
+$ckeckbox-active-total-height: 98px;
+$ckeckbox-active-image: '../img/sprites/raster/sprite.png';
+$ckeckbox-active: (120px, 55px, -120px, -55px, 20px, 20px, 140px, 98px, '../img/sprites/raster/sprite.png', 'ckeckbox-active', );
+$h1-pouches-left-name: 'h1-pouches-left';
+$h1-pouches-left-x: 42px;
+$h1-pouches-left-y: 78px;
+$h1-pouches-left-offset-x: -42px;
+$h1-pouches-left-offset-y: -78px;
+$h1-pouches-left-width: 40px;
+$h1-pouches-left-height: 14px;
+$h1-pouches-left-total-width: 140px;
+$h1-pouches-left-total-height: 98px;
+$h1-pouches-left-image: '../img/sprites/raster/sprite.png';
+$h1-pouches-left: (42px, 78px, -42px, -78px, 40px, 14px, 140px, 98px, '../img/sprites/raster/sprite.png', 'h1-pouches-left', );
+$h1-pouches-right-name: 'h1-pouches-right';
+$h1-pouches-right-x: 100px;
+$h1-pouches-right-y: 0px;
+$h1-pouches-right-offset-x: -100px;
+$h1-pouches-right-offset-y: 0px;
+$h1-pouches-right-width: 40px;
+$h1-pouches-right-height: 14px;
+$h1-pouches-right-total-width: 140px;
+$h1-pouches-right-total-height: 98px;
+$h1-pouches-right-image: '../img/sprites/raster/sprite.png';
+$h1-pouches-right: (100px, 0px, -100px, 0px, 40px, 14px, 140px, 98px, '../img/sprites/raster/sprite.png', 'h1-pouches-right', );
+$h3-pouches-left-name: 'h3-pouches-left';
+$h3-pouches-left-x: 40px;
+$h3-pouches-left-y: 30px;
+$h3-pouches-left-offset-x: -40px;
+$h3-pouches-left-offset-y: -30px;
+$h3-pouches-left-width: 21px;
+$h3-pouches-left-height: 10px;
+$h3-pouches-left-total-width: 140px;
+$h3-pouches-left-total-height: 98px;
+$h3-pouches-left-image: '../img/sprites/raster/sprite.png';
+$h3-pouches-left: (40px, 30px, -40px, -30px, 21px, 10px, 140px, 98px, '../img/sprites/raster/sprite.png', 'h3-pouches-left', );
+$h3-pouches-right-name: 'h3-pouches-right';
+$h3-pouches-right-x: 70px;
+$h3-pouches-right-y: 30px;
+$h3-pouches-right-offset-x: -70px;
+$h3-pouches-right-offset-y: -30px;
+$h3-pouches-right-width: 21px;
+$h3-pouches-right-height: 10px;
+$h3-pouches-right-total-width: 140px;
+$h3-pouches-right-total-height: 98px;
+$h3-pouches-right-image: '../img/sprites/raster/sprite.png';
+$h3-pouches-right: (70px, 30px, -70px, -30px, 21px, 10px, 140px, 98px, '../img/sprites/raster/sprite.png', 'h3-pouches-right', );
+$h3-pouches-right-2x-name: 'h3-pouches-right@2x';
+$h3-pouches-right-2x-x: 0px;
+$h3-pouches-right-2x-y: 78px;
+$h3-pouches-right-2x-offset-x: 0px;
+$h3-pouches-right-2x-offset-y: -78px;
+$h3-pouches-right-2x-width: 42px;
+$h3-pouches-right-2x-height: 20px;
+$h3-pouches-right-2x-total-width: 140px;
+$h3-pouches-right-2x-total-height: 98px;
+$h3-pouches-right-2x-image: '../img/sprites/raster/sprite.png';
+$h3-pouches-right-2x: (0px, 78px, 0px, -78px, 42px, 20px, 140px, 98px, '../img/sprites/raster/sprite.png', 'h3-pouches-right@2x', );
+$map-health-name: 'map-health';
+$map-health-x: 0px;
+$map-health-y: 48px;
+$map-health-offset-x: 0px;
+$map-health-offset-y: -48px;
+$map-health-width: 30px;
+$map-health-height: 30px;
+$map-health-total-width: 140px;
+$map-health-total-height: 98px;
+$map-health-image: '../img/sprites/raster/sprite.png';
+$map-health: (0px, 48px, 0px, -48px, 30px, 30px, 140px, 98px, '../img/sprites/raster/sprite.png', 'map-health', );
+$map-school-name: 'map-school';
+$map-school-x: 70px;
+$map-school-y: 0px;
+$map-school-offset-x: -70px;
+$map-school-offset-y: 0px;
+$map-school-width: 30px;
+$map-school-height: 30px;
+$map-school-total-width: 140px;
+$map-school-total-height: 98px;
+$map-school-image: '../img/sprites/raster/sprite.png';
+$map-school: (70px, 0px, -70px, 0px, 30px, 30px, 140px, 98px, '../img/sprites/raster/sprite.png', 'map-school', );
+$map-shop-name: 'map-shop';
+$map-shop-x: 40px;
+$map-shop-y: 0px;
+$map-shop-offset-x: -40px;
+$map-shop-offset-y: 0px;
+$map-shop-width: 30px;
+$map-shop-height: 30px;
+$map-shop-total-width: 140px;
+$map-shop-total-height: 98px;
+$map-shop-image: '../img/sprites/raster/sprite.png';
+$map-shop: (40px, 0px, -40px, 0px, 30px, 30px, 140px, 98px, '../img/sprites/raster/sprite.png', 'map-shop', );
+$radio-active-name: 'radio-active';
+$radio-active-x: 100px;
+$radio-active-y: 55px;
+$radio-active-offset-x: -100px;
+$radio-active-offset-y: -55px;
+$radio-active-width: 20px;
+$radio-active-height: 21px;
+$radio-active-total-width: 140px;
+$radio-active-total-height: 98px;
+$radio-active-image: '../img/sprites/raster/sprite.png';
+$radio-active: (100px, 55px, -100px, -55px, 20px, 21px, 140px, 98px, '../img/sprites/raster/sprite.png', 'radio-active', );
+$radio-name: 'radio';
+$radio-x: 100px;
+$radio-y: 14px;
+$radio-offset-x: -100px;
+$radio-offset-y: -14px;
+$radio-width: 21px;
+$radio-height: 21px;
+$radio-total-width: 140px;
+$radio-total-height: 98px;
+$radio-image: '../img/sprites/raster/sprite.png';
+$radio: (100px, 14px, -100px, -14px, 21px, 21px, 140px, 98px, '../img/sprites/raster/sprite.png', 'radio', );
+$spritesheet-width: 140px;
+$spritesheet-height: 98px;
+$spritesheet-image: '../img/sprites/raster/sprite.png';
+$spritesheet-sprites: ($bank-building, $check, $checkbox-active, $checkbox, $citate, $ckeckbox-active, $h1-pouches-left, $h1-pouches-right, $h3-pouches-left, $h3-pouches-right, $h3-pouches-right-2x, $map-health, $map-school, $map-shop, $radio-active, $radio, );
+$spritesheet: (140px, 98px, '../img/sprites/raster/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
