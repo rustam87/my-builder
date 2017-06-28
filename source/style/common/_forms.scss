@@ -1,12 +1,11 @@
 
-
 .btn {
     display: inline-block;
     padding: 13px 30px;
     font-size: 1.16rem;
     cursor: pointer;
 
-    &--auth {
+    &_auth {
         background-color: transparent;
         border: 1px solid #FFF;
         border-radius: 2px;
@@ -18,7 +17,6 @@
         }
     }
 }
-
 
 .form-control {
     background-color: #FFF;
@@ -51,13 +49,12 @@
         }
     }
 
-    &__field--width-100 {
+    &__field_width-100 {
         width: 100%;
     }
 }
 
 .form-control-checkbox {
-
 
     &__hidden-field {
         display: none;
@@ -81,12 +78,9 @@ input[type="checkbox"]:checked + .form-control-checkbox__text::before {
     @include sprite($checkbox-active);
 }
 
-
 .form-control-radio {
     display: inline-block;
     margin-right: 30px;
-
-
 
     &__hidden-field {
         display: none;

@@ -7,8 +7,10 @@ block content
     .fullpage.index
         .fullpage__top
             form
-                button.btn.btn--auth Авторизоваться
+                button.btn.btn_auth Авторизоваться
         .fullpage__central
+
+            // TODO код формы пользователя
             //.user
             //    img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
             //    .user__title Аблызалов Рустам
@@ -17,15 +19,15 @@ block content
             //        .social
             //            .social__item
             //                a(href="#")
-            //                    svg(width=31,height=17, class="svg svg--color-white")
+            //                    svg(width=31,height=17, class="svg svg_color-white")
             //                        use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
             //            .social__item
             //                a(href="#")
-            //                    svg(width=26,height=22, class="svg svg--color-white")
+            //                    svg(width=26,height=22, class="svg svg_color-white")
             //                        use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
             //            .social__item
             //                a(href="#")
-            //                    svg(width=24,height=22, class="svg svg--color-white")
+            //                    svg(width=24,height=22, class="svg svg_color-white")
             //                        use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
             //ul.menu
             //    li.menu__item
@@ -40,36 +42,36 @@ block content
                     .user-auth__login
                         .form-control
                             .form-control__icon
-                                svg(width=31,height=17, class="svg svg--color-gray")
+                                svg(width=31,height=17, class="svg svg_color-gray")
                                     use(xlink:href="assets/img/sprites/svg/sprite.svg#login")
-                            input(placeholder="Логин").form-control__field.form-control__field--width-100
+                            input(placeholder="Логин").form-control__field.form-control__field_width-100
                     .user-auth__pass
                         .form-control
                             .form-control__icon
-                                svg(width=31,height=17, class="svg svg--color-gray")
+                                svg(width=31,height=17, class="svg svg_color-gray")
                                     use(xlink:href="assets/img/sprites/svg/sprite.svg#password")
-                            input(placeholder="Пароль").form-control__field.form-control__field--width-100
+                            input(placeholder="Пароль").form-control__field.form-control__field_width-100
                     .user-auth__check
                         label.form-control-checkbox
                             input(type="checkbox").form-control-checkbox__hidden-field
                             .form-control-checkbox__text.label
-                                span.label__text-- Я не робот
+                                span.label__text_ Я не робот
                     .user-auth__check-repeat
-                        div Вы точно не робот?
+                        div.question Вы точно не робот?
                         .form-control-group-radio
                             label.form-control-radio
                                 input(type="checkbox" name="group").form-control-radio__hidden-field
                                 .form-control-radio__text.label
-                                    span.label__text-- Да
+                                    span.label__text_ Да
                             label.form-control-radio
                                 input(type="checkbox" name="group").form-control-radio__hidden-field
                                 .form-control-radio__text.label
-                                    span.label__text-- Не уверен
+                                    span.label__text_ Не уверен
                 ul.menu
-                    li.menu__item.menu__item--width-50
+                    li.menu__item.menu__item_width-50
                         a(href="#" class="link-block") На главную
-                    li.menu__item.menu__item--width-50
+                    li.menu__item.menu__item_width-50
                         a(href="#" class="link-block") Войти
 
         .fullpage__bottom
-            .text.text--white © Аблызалов Рустам | создано с любовью в LoftSchool | 2016
+            .text.text_white © Аблызалов Рустам | создано с любовью в LoftSchool | 2016
