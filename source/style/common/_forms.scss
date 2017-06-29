@@ -19,7 +19,7 @@
         background-color: $brown-darken;
     }
 
-    &--auth {
+    &_auth {
         background-color: transparent;
         border: 1px solid #FFF;
         border-radius: 2px;
@@ -93,7 +93,6 @@
 
 .form-control-checkbox {
 
-
     &__hidden-field {
         display: none;
     }
@@ -121,8 +120,6 @@ input[type="checkbox"]:checked + .form-control-checkbox__text::before {
     display: inline-block;
     margin-right: 30px;
 
-
-
     &__hidden-field {
         display: none;
     }
@@ -138,7 +135,6 @@ input[type="checkbox"]:checked + .form-control-checkbox__text::before {
             margin-right: 10px;
         }
     }
-
 }
 
 input[type="checkbox"]:checked + .form-control-radio__text::before {

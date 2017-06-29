@@ -1,6 +1,6 @@
 .svg {
 
-    &--color-white {
+    &_color-white {
         fill: #F5E7DB;
 
         &:hover {
@@ -8,7 +8,7 @@
         }
     }
 
-    &--color-gray {
+    &_color-gray {
         fill: #C3CBCD;
     }
 }
