@@ -1,7 +1,11 @@
 (function() {
   'use strict';
+  var btnMenu  = document.querySelector('.btn-menu');
+  var siteMenu = document.querySelector('.site-menu');
+      //.classList.add('m--show');
 
-  setTimeout(function() {
-    document.querySelector('.greating_picture').classList.add('m--show');
-  }, 1000);
+  btnMenu.addEventListener('click', function() {
+    siteMenu.classList.add('open');
+  });
+
 })();

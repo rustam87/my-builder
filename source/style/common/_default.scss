@@ -32,7 +32,7 @@ textarea {
 
 .heading-block {
     position: absolute;
-    bottom: 0;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -56,5 +56,10 @@ textarea {
     &--color-white {
         color: #FFF;
     }
+}
+
+
+.arrow {
+    cursor: pointer;
 }
 

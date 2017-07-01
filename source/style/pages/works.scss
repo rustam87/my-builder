@@ -17,13 +17,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-
     &__top {
         display: flex;
         justify-content: space-between;
         padding: 20px;
     }
-
 
     &__bottom {
         min-height: 102px;
@@ -33,7 +31,6 @@ body {
             position: absolute;
             left: 50%;
             top: 0;
-            cursor: pointer;
             transform: translateX(-50%);
             z-index: 1;
         }
@@ -44,11 +41,6 @@ body {
         background-size: cover;
         min-height: 400px;
     }
-
-    //&__bg-text {
-    //    position: absolute;
-    //    top: 50%;
-    //}
 }
 
 .about-me-section {
@@ -56,13 +48,57 @@ body {
     background: url($src_img_path + '/works/about-me-bg.jpg');
     background-position: 50%;
     background-size: cover;
+    overflow: hidden;
+    padding-bottom: 260px;
 
     &__comments {
         margin-bottom: 70px;
+    }
+
+    .arrow {
+        margin: 0 auto;
+        margin-top: 70px;
+        display: block;
+    }
+
+    .header-block {
+        width: 501px;
+        height: 177px;
+        margin: 0 auto;
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+    }
+
+    .header-block__bg {
+        width: 100%;
+        fill: #6e7171;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
 .porfolio-section {
     background-color: $gray-type-7;
+    overflow: hidden;
+
+    .header-block {
+        width: 506px;
+        height: 165px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+    }
+
+    .header-block__bg {
+        width: 100%;
+        fill: #cd8920;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 

@@ -7,6 +7,25 @@
 }
 
 .about-me-column {
+    margin-top: -30px;
+
+    .header-block {
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .header-block__bg {
+        width: 100%;
+        fill: #cd8920;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
     &__wrapper {
         width: 445px;

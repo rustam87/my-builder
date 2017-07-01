@@ -15,26 +15,46 @@
     }
 }
 
-.skills__item + .skills__item {
-    margin-left: 37px;
+
+
+.skills__item {
+    display: flex;
 }
 
 .skill {
-    width: 110px;
-    height: 110px;
+    position: relative;
 
+    &__bar {
+        position: relative;
+        width: 110px;
+        height: 110px;
+
+        circle {
+            transform-origin: 50%;
+            transform: rotate(-90deg);
+        }
+    }
 
     &__name {
+        width: 100%;
+        height: 100%;
         position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: $orange-type-1;
-        font-size: 0.93rem;
-        text-align: center;
+        font: {
+            family: $roboto;
+            size: 1.07rem;
+        }
     }
 }
 
+
+.skill + .skill {
+    margin-left: 40px;
+}
 
 
 

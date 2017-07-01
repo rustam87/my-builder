@@ -4,6 +4,7 @@ block variables
     - var title = 'Works page'
 
 block content
+    include ../modules/btn-menu
     .section-wrapper
         +site-menu('works')
         section.user-section.section
@@ -21,8 +22,6 @@ block content
                         a(href="#")
                             svg(width=24,height=22, class="svg svg--color-white svg--hover-color-orange")
                                 use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
-                svg(width=40,height=35, class="svg svg--color-white")
-                    use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
             .user-section__center
                 svg(class="user-bg" viewBox="0 0 1176 313" preserveAspectRatio="none")
                     use(xlink:href="assets/img/sprites/svg/sprite.svg#portfolio_header")
@@ -33,12 +32,14 @@ block content
             .user-section__bottom
                 svg(width=26,height=16, class="arrow arrow-down svg svg--color-white svg--hover-color-beige")
                     use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_down")
-
                 svg(class="traingle", xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85")
                     polygon(class="left" points="0,0   0,86   500.8,86   500.8,84")
                     polygon(class="right" points="1000,0   1000,86   500,86   500,84")
-        section.porfolio-section.section
-            h1.porfolio-section__title.section__header Мои работы
+        section.porfolio-section
+            .header-block
+                svg(class="header-block__bg" )
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#works_header")
+                h1 Мои работы
             .portfolio
                 .portfolio-main-site
                     .site-example
@@ -46,7 +47,6 @@ block content
                         .border-block
                             .border-block__text HTML, CSS, JAVASCRIPT
                         a(href="#" class="btn") Посмотреть сайт
-
                 .portfolio-other-sites
                     .portfolio-other-sites__main
                         img(src="assets/img/works/site-1.png")
@@ -55,7 +55,10 @@ block content
                     .portfolio-other-sites__other
                         img(src="assets/img/works/site-3.jpg")
         section.about-me-section.section.last
-            h1.section__header Что обо мне<br>говорят
+            .header-block
+                svg(class="header-block__bg" )
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#about_header")
+                h1 Что обо мне<br>говорят
             .comments.about-me-section__comments
                 .comment
                     .comment__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только                   самых тяжелых испытаний и бессонных ночей!
@@ -74,8 +77,6 @@ block content
                         .author-describe
                             .author-describe__name Сабанцев Владимир
                             .author-describe__position преподаватель
-
-
             form.callback-form
                 h3.callback-form__title Связаться со мной
                 .callback-form__form
@@ -88,40 +89,10 @@ block content
                 .callback-form__buttons-block.btn-group
                     button.btn Отправить
                     button.btn Очистить
-    .footer
-        .footer-wrapper
-            .footer-column.left-column
-                .footer-column__text.footer-column__text--color-white  Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool.
-                .footer-column__text  © Рустам Аьлызалов<br> с любовью в LoftSchool | 2017
-            .footer-column.middle-column
-                ul.footer-menu
-                    li.footer-menu__item
-                        a(href="#") Мои работы
-                    li.footer-menu__item
-                        a(href="#") Обо мне
-                    li.footer-menu__item
-                        a(href="#") Блог
-                    li.footer-menu__item
-                        a(href="#") Авторизация
-                .social
-                    .social__item
-                        a(href="#")
-                            svg(width=31,height=17, class="svg svg--color-light-gray svg--hover-color-white")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
-                    .social__item
-                        a(href="#")
-                            svg(width=26,height=22, class="svg svg--color-light-gray svg--hover-color-white")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
-                    .social__item
-                        a(href="#")
-                            svg(width=24,height=22, class="svg svg--color-light-gray svg--hover-color-white")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
-            .footer-column.right-column
-                ul.contacts.contacts--footer
-                    li.contacts__item skype_kdn
-                    li.contacts__item astahov@gmail.com
-                    li.contacts__item +7 931 200 93 24
-                    li.contacts__item Новосибирск, ул. Инская, д.14
+            svg(width=26,height=16, class="arrow arrow-up svg svg--color-white svg--hover-color-beige")
+                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
+
+    include ../modules/footer
 
 
 

@@ -2,13 +2,74 @@ extends ../_template
 
 block variables
     - var title = 'About me page'
+    -
+        var skillsFrontend =
+            [
+                {
+                    name: 'HTML5',
+                    color: '#e6ad41',
+                    value: 180
+                },
+                {
+                    name: 'CSS3',
+                    color: '#e6ad41',
+                    value: 110
+                },
+                {
+                    name: 'Javascript</br>Jquery',
+                    color: '#e6ad41',
+                    value: 250
+                }
+            ]
+
+        var skillsBackend =
+        [
+            {
+                name: 'PHP',
+                color: '#e4bf7b',
+                value: 180
+            },
+            {
+                name: 'mySQL',
+                color: '#e4bf7b',
+                value: 110
+            },
+            {
+                name: 'Node.js & npm',
+                color: '#e4bf7b',
+                value: 135
+            },
+            {
+                name: 'Mongo.db',
+                color: '#e4bf7b',
+                value: 175
+            }
+        ]
+
+        var skillsWorkFlow =
+        [
+            {
+                name: 'git',
+                color: '#e6ad41',
+                value: 180
+            },
+            {
+                name: 'gulp',
+                color: '#e6ad41',
+                value: 110
+            },
+            {
+                name: 'bower',
+                color: '#e6ad41',
+                value: 135
+            }
+        ]
+
 
 block content
-    .btn-menu
-        svg(width=40,height=35, class="svg svg--color-white")
-            use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
+    include ../modules/btn-menu
     .section-wrapper
-        //+site-menu('about')
+        +site-menu('about')
         section.user-section.section
             .user-section__top
                 .social
@@ -25,18 +86,25 @@ block content
                             svg(width=24,height=22, class="svg svg--color-white svg--hover-color-orange")
                                 use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
             .user-section__center
+                svg(class="user-bg" viewBox="0 0 1176 313" preserveAspectRatio="none")
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#portfolio_header")
                 .user
                     img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
                     .user__title Аблызалов Рустам
                     .user__subtitle Личный сайт веб разработчика
             .user-section__bottom
+                svg(width=26,height=16, class="arrow arrow-down svg svg--color-white svg--hover-color-beige")
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_down")
                 svg(class="traingle", xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85")
-                    polygon(class="left" points="0,0   0,86   500.8,86   500.8,84")
-                    polygon(class="right" points="1000,0   1000,86   500,86   500,84")
-        section.about-me.section
+                    polygon(class="left" points="0,0 0,86 500.8,86 500.8,84" fill="#efeee9")
+                    polygon(class="right" points="1000,0   1000,86   500,86   500,84" fill="#EEEBDF")
+        section.about-me
             .about-me-column.about-me-column--left
                 .about-me-column__wrapper
-                    h1.section__header Обо мне
+                    .header-block
+                        svg(class="header-block__bg" )
+                            use(xlink:href="assets/img/sprites/svg/sprite.svg#about_header")
+                        h1 Обо мне
                     img(class="" src="http://via.placeholder.com/443x390", alt="Фото")
                     h3 Кто я
                     p
@@ -55,32 +123,32 @@ block content
                         .skill-direction__header Frontend
                         .skill-direction__skills.skills
                             .skills__item
-                                .skill
-                                    svg
-                                        circle(cx="55" cy="55" r="45" fill="transparent" stroke="#DFDCD5" stroke-width="20")
-                                    svg
-                                        circle(cx="55" cy="55" r="45" fill="transparent" stroke="#E6AD41" stroke-width="20" stroke-dasharray=200, 1000)
-                            //each val in ["JS", "HTMl", 'JavaScript & jQuery']
-                            //    .skills__item
-                            //        .skill
-                            //            img(src="assets/img/about-me/skill.png" class="skill__bar")
-                            //            .skill__name= val
+                                each skill in skillsFrontend
+                                    .skill
+                                        .skill__name=skill.name
+                                        svg.skill__bar
+                                            circle(cx="55" cy="55" r="45" fill="transparent" stroke="#DFDCD5" stroke-width="20")
+                                            circle(cx="55" cy="55" r="45" fill="transparent" stroke=skill.color stroke-width="20" stroke-dasharray=skill.value + ',300')
                     .skill-direction
                         .skill-direction__header Backend
                         .skill-direction__skills.skills
-                            each val in ["PHP", "mySQL", "Node.js & npm", "Mongo.db"]
-                                .skills__item
+                            .skills__item
+                                each skill in skillsBackend
                                     .skill
-                                        img(src="assets/img/about-me/skill.png" class="skill__bar")
-                                        .skill__name= val
+                                        .skill__name=skill.name
+                                        svg.skill__bar
+                                            circle(cx="55" cy="55" r="45" fill="transparent" stroke="#DFDCD5" stroke-width="20")
+                                            circle(cx="55" cy="55" r="45" fill="transparent" stroke=skill.color stroke-width="20" stroke-dasharray=skill.value + ',300')
                     .skill-direction
                         .skill-direction__header WorkFlow
-                        .skill-direction__skills.skills
-                            each val in ["Git", "Gulp", "Bower"]
-                                .skills__item
+                        skill-direction__skills.skills
+                            .skills__item
+                                each skill in skillsWorkFlow
                                     .skill
-                                        img(src="assets/img/about-me/skill.png" class="skill__bar")
-                                        .skill__name= val
+                                        .skill__name=skill.name
+                                        svg.skill__bar
+                                            circle(cx="55" cy="55" r="45" fill="transparent" stroke="#DFDCD5" stroke-width="20")
+                                            circle(cx="55" cy="55" r="45" fill="transparent" stroke=skill.color stroke-width="20" stroke-dasharray=skill.value + ',300')
         section.map
             .map-info
                 h3.map-info__title Контакты
@@ -101,43 +169,8 @@ block content
                         svg(width=24,height=24, class="contacts-item__icon svg svg--color-orange")
                             use(xlink:href="assets/img/sprites/svg/sprite.svg#marker")
                         .contacts-item__text Новосибирск, ул. Инская, д.14
+        include ../modules/footer
 
-
-
-    .footer
-        .footer-wrapper
-            .footer-column.left-column
-                .footer-column__text.footer-column__text--color-white  Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool.
-                .footer-column__text  © Рустам Аьлызалов<br> с любовью в LoftSchool | 2017
-            .footer-column.middle-column
-                ul.footer-menu
-                    li.footer-menu__item
-                        a(href="#") Мои работы
-                    li.footer-menu__item
-                        a(href="#") Обо мне
-                    li.footer-menu__item
-                        a(href="#") Блог
-                    li.footer-menu__item
-                        a(href="#") Авторизация
-                .social
-                    .social__item
-                        a(href="#")
-                            svg(width=31,height=17, class="svg svg--color-light-gray svg--hover-color-white")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
-                    .social__item
-                        a(href="#")
-                            svg(width=26,height=22, class="svg svg--color-light-gray svg--hover-color-white")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
-                    .social__item
-                        a(href="#")
-                            svg(width=24,height=22, class="svg svg--color-light-gray svg--hover-color-white")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
-            .footer-column.right-column
-                ul.contacts.contacts--footer
-                    li.contacts__item skype_kdn
-                    li.contacts__item astahov@gmail.com
-                    li.contacts__item +7 931 200 93 24
-                    li.contacts__item Новосибирск, ул. Инская, д.14
 
 
 
