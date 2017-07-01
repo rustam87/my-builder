@@ -1,0 +1,22 @@
+.social {
+    display: flex;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: block;
+            font-weight: 500;
+        }
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+
+    &_center {
+        justify-content: center;
+    }
+}

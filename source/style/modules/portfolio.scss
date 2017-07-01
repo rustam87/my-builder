@@ -1,0 +1,57 @@
+.portfolio {
+
+    display: flex;
+
+    &-main-site,
+    &-other-sites {
+        width: 50%;
+    }
+
+    &-main-site {
+        min-height: 750px;
+        background-color: $gray-type-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.portfolio-other-sites {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__main {
+        min-height: 525px;
+        width: 100%;
+        background-color: $gray-type-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__other {
+        width: 50%;
+        min-height: 225px;
+    }
+}
+
+.site-example {
+    width: 420px;
+    text-align: center;
+
+}
+
+.border-block {
+    border-top: 1px solid $gray-type-3;
+    border-bottom: 1px solid $gray-type-3;
+    padding: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    &__text {
+        font-size: 1.16rem;
+        color: $orange-type-1;
+        text-transform: uppercase;
+    }
+}

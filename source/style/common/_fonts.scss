@@ -1,12 +1,9 @@
-
-
 $basePath: '../fonts/';
 $robotoPath: $basePath + 'Roboto/';
 $sansusWebissimoPath: $basePath + 'SansusWebissimo/';
 
-@each $font in
-        SansusWebissimo,
-        Sansus-Webissimo-Regular {
+@each $font in SansusWebissimo,
+Sansus-Webissimo-Regular {
 
     $fullSansusWebissimoPath: $sansusWebissimoPath + $font;
 
@@ -20,15 +17,14 @@ $sansusWebissimoPath: $basePath + 'SansusWebissimo/';
     }
 }
 
-@each $font in
-        Roboto-Bold,
-        Roboto-BoldItalic,
-        Roboto-Italic,
-        Roboto-Light,
-        Roboto-LightItalic,
-        Roboto-Medium,
-        Roboto-MediumItalic,
-        Roboto-Regular {
+@each $font in Roboto-Bold,
+Roboto-BoldItalic,
+Roboto-Italic,
+Roboto-Light,
+Roboto-LightItalic,
+Roboto-Medium,
+Roboto-MediumItalic,
+Roboto-Regular {
 
     $fullRobotoPath: $robotoPath + $font;
 
