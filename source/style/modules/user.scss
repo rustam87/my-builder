@@ -1,4 +1,6 @@
 .user {
+    position: relative;
+    z-index: 1;
     text-align: center;
     color: #FFF;
 
@@ -32,6 +34,7 @@
 
     &__title {
         margin-top: 0;
+        color: #FFF;
     }
 
     &__check {
@@ -44,4 +47,14 @@
 
         margin-bottom: 30px;
     }
+}
+
+.user-bg {
+    position: absolute;
+    z-index: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $orange-type-1;
+    opacity: 0.1;
 }

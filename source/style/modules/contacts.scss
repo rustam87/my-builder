@@ -1,0 +1,33 @@
+.contacts {
+    min-height: 100%;
+    color: #FFF;
+    font-size: 1.16rem;
+
+    &--footer {
+        opacity: 0.5;
+        color: #FFF;
+    }
+
+    &--map {
+        color: $gray-type-4;
+        opacity: 0.8;
+        font-weight: 500;
+
+        .contacts__item {
+            margin-bottom: 26px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        margin-right: 10px;
+    }
+}

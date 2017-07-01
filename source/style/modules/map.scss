@@ -1,0 +1,17 @@
+.map {
+    min-height: 984px;
+    background: url('../../assets/img/about-me/map.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-info {
+    width: 380px;
+    padding: 35px 40px;
+    background-color: rgba(252, 252, 252, 0.85);
+
+    &__title {
+        margin-top: 0;
+    }
+}

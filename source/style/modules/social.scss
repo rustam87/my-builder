@@ -1,11 +1,11 @@
 .social {
     display: flex;
-    justify-content: center;
+
 
     &__item {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
 
         a {
             display: block;
@@ -15,5 +15,9 @@
 
     &__item + &__item {
         margin-left: 30px;
+    }
+
+    &--center {
+        justify-content: center;
     }
 }

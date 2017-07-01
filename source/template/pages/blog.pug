@@ -1,0 +1,90 @@
+extends ../_template
+
+block variables
+    - var title = 'Blog page'
+
+block content
+    .btn-menu
+        svg(width=40,height=35, class="svg svg--color-white")
+            use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
+    .section-wrapper
+        +site-menu('blog')
+        section.user-section.user-section--blog.section
+            .user-section__top
+                include ../modules/social.pug
+
+            .user-section__center
+                .user
+                    img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
+                    .heading-block
+                        svg(width=303,height=208, class="heading-block__bg")
+                            use(xlink:href="assets/img/sprites/svg/sprite.svg#blog_header")
+                        .heading-block__text
+                            h1.heading-block-header.white Блог
+                            .heading-block-subheader Статьи, которые я написал
+            .user-section__bottom
+                svg(class="traingle", xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85")
+                    polygon(class="left" points="0,0   0,86   500.8,86   500.8,84")
+                    polygon(class="right" points="1000,0   1000,86   500,86   500,84")
+            </svg>
+        section.blog.section.last
+            .blog-wrapper
+                ul.blog-menu
+                    li.blog-menu__item.blog-menu__item--active
+                        a(href="#") Самое важное в SASS
+                    li.blog-menu__item
+                        a(href="#") Приёмы в вёрстке, без которых не обходится ни один сайт
+                    li.blog-menu__item
+                        a(href="#") Самый необходимый набор Gulp плагинов
+                    li.blog-menu__item
+                        a(href="#") Почему я выбрал Jade
+                .blog-articles
+                    .article
+                        .article__title Самое важное в SASS
+                        .article__date 22 ноября 2016
+                        .article__text
+                            p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                            p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                        .stub
+
+                    .article
+                        .article__title Приёмы в вёрстке, без которых не обходится ни один сайт
+                        .article__date 13 ноября 2016
+                        .article__text
+                            p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                            p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+
+    .footer
+        .footer-wrapper
+            .footer-column.left-column
+                .footer-column__text.footer-column__text--color-white  Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool.
+                .footer-column__text  © Рустам Аьлызалов<br> с любовью в LoftSchool | 2017
+            .footer-column.middle-column
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="#") Мои работы
+                    li.footer-menu__item
+                        a(href="#") Обо мне
+                    li.footer-menu__item
+                        a(href="#") Блог
+                    li.footer-menu__item
+                        a(href="#") Авторизация
+                .social
+                    .social__item
+                        a(href="#")
+                            svg(width=31,height=17, class="svg svg--color-light-gray svg--hover-color-white")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
+                    .social__item
+                        a(href="#")
+                            svg(width=26,height=22, class="svg svg--color-light-gray svg--hover-color-white")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
+                    .social__item
+                        a(href="#")
+                            svg(width=24,height=22, class="svg svg--color-light-gray svg--hover-color-white")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
+            .footer-column.right-column
+                ul.contacts.contacts--footer
+                    li.contacts__item skype_kdn
+                    li.contacts__item astahov@gmail.com
+                    li.contacts__item +7 931 200 93 24
+                    li.contacts__item Новосибирск, ул. Инская, д.14

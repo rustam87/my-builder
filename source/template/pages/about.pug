@@ -1,0 +1,153 @@
+extends ../_template
+
+block variables
+    - var title = 'About me page'
+
+block content
+    .btn-menu
+        svg(width=40,height=35, class="svg svg--color-white")
+            use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
+    .section-wrapper
+        //+site-menu('about')
+        section.user-section.section
+            .user-section__top
+                .social
+                    .social__item
+                        a(href="#")
+                            svg(width=31,height=17, class="svg svg--color-white svg--hover-color-orange")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
+                    .social__item
+                        a(href="#")
+                            svg(width=26,height=22, class="svg svg--color-white svg--hover-color-orange")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
+                    .social__item
+                        a(href="#")
+                            svg(width=24,height=22, class="svg svg--color-white svg--hover-color-orange")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
+            .user-section__center
+                .user
+                    img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
+                    .user__title Аблызалов Рустам
+                    .user__subtitle Личный сайт веб разработчика
+            .user-section__bottom
+                svg(class="traingle", xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85")
+                    polygon(class="left" points="0,0   0,86   500.8,86   500.8,84")
+                    polygon(class="right" points="1000,0   1000,86   500,86   500,84")
+        section.about-me.section
+            .about-me-column.about-me-column--left
+                .about-me-column__wrapper
+                    h1.section__header Обо мне
+                    img(class="" src="http://via.placeholder.com/443x390", alt="Фото")
+                    h3 Кто я
+                    p
+                        | Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов
+                        | и приложений. Мне нравится делать интересные и современные проекты.
+                    p
+                        | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу
+                        | в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+            .about-me-column.about-me-column--right
+                h3 Чем я могу быть<br>вам полезен
+                p
+                    | Больше всего меня привлекет Frontend разработка, но я также знаком
+                    | и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                .skills-block
+                    .skill-direction
+                        .skill-direction__header Frontend
+                        .skill-direction__skills.skills
+                            .skills__item
+                                .skill
+                                    svg
+                                        circle(cx="55" cy="55" r="45" fill="transparent" stroke="#DFDCD5" stroke-width="20")
+                                    svg
+                                        circle(cx="55" cy="55" r="45" fill="transparent" stroke="#E6AD41" stroke-width="20" stroke-dasharray=200, 1000)
+                            //each val in ["JS", "HTMl", 'JavaScript & jQuery']
+                            //    .skills__item
+                            //        .skill
+                            //            img(src="assets/img/about-me/skill.png" class="skill__bar")
+                            //            .skill__name= val
+                    .skill-direction
+                        .skill-direction__header Backend
+                        .skill-direction__skills.skills
+                            each val in ["PHP", "mySQL", "Node.js & npm", "Mongo.db"]
+                                .skills__item
+                                    .skill
+                                        img(src="assets/img/about-me/skill.png" class="skill__bar")
+                                        .skill__name= val
+                    .skill-direction
+                        .skill-direction__header WorkFlow
+                        .skill-direction__skills.skills
+                            each val in ["Git", "Gulp", "Bower"]
+                                .skills__item
+                                    .skill
+                                        img(src="assets/img/about-me/skill.png" class="skill__bar")
+                                        .skill__name= val
+        section.map
+            .map-info
+                h3.map-info__title Контакты
+                ul.contacts.contacts--map.contacts--icons
+                    li.contacts__item.contacts-item
+                        svg(width=24,height=24, class="contacts-item__icon svg svg--color-orange")
+                            use(xlink:href="assets/img/sprites/svg/sprite.svg#skype")
+                        .contacts-item__text skype_kdn
+                    li.contacts__item.contacts-item
+                        svg(width=24,height=24, class="contacts-item__icon svg svg--color-orange")
+                            use(xlink:href="assets/img/sprites/svg/sprite.svg#email")
+                        .contacts-item__text astahov@gmail.com
+                    li.contacts__item.contacts-item
+                        svg(width=24,height=24, class="contacts-item__icon svg svg--color-orange")
+                            use(xlink:href="assets/img/sprites/svg/sprite.svg#phone")
+                        .contacts-item__text +7 931 200 93 24
+                    li.contacts__item.contacts-item
+                        svg(width=24,height=24, class="contacts-item__icon svg svg--color-orange")
+                            use(xlink:href="assets/img/sprites/svg/sprite.svg#marker")
+                        .contacts-item__text Новосибирск, ул. Инская, д.14
+
+
+
+    .footer
+        .footer-wrapper
+            .footer-column.left-column
+                .footer-column__text.footer-column__text--color-white  Этот сайт я сделал в рамках обучения в Школе<br> онлайн образования LoftSchool.
+                .footer-column__text  © Рустам Аьлызалов<br> с любовью в LoftSchool | 2017
+            .footer-column.middle-column
+                ul.footer-menu
+                    li.footer-menu__item
+                        a(href="#") Мои работы
+                    li.footer-menu__item
+                        a(href="#") Обо мне
+                    li.footer-menu__item
+                        a(href="#") Блог
+                    li.footer-menu__item
+                        a(href="#") Авторизация
+                .social
+                    .social__item
+                        a(href="#")
+                            svg(width=31,height=17, class="svg svg--color-light-gray svg--hover-color-white")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
+                    .social__item
+                        a(href="#")
+                            svg(width=26,height=22, class="svg svg--color-light-gray svg--hover-color-white")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
+                    .social__item
+                        a(href="#")
+                            svg(width=24,height=22, class="svg svg--color-light-gray svg--hover-color-white")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
+            .footer-column.right-column
+                ul.contacts.contacts--footer
+                    li.contacts__item skype_kdn
+                    li.contacts__item astahov@gmail.com
+                    li.contacts__item +7 931 200 93 24
+                    li.contacts__item Новосибирск, ул. Инская, д.14
+
+
+
+
+
+
+
+
+
+
+
+
+
