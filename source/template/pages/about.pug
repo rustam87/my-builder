@@ -8,7 +8,7 @@ block content
         svg(width=40,height=35, class="svg svg--color-white")
             use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
     .section-wrapper
-        +site-menu('about')
+        //+site-menu('about')
         section.user-section.section
             .user-section__top
                 .social
@@ -54,11 +54,17 @@ block content
                     .skill-direction
                         .skill-direction__header Frontend
                         .skill-direction__skills.skills
-                            each val in ["JS", "HTMl", 'JavaScript & jQuery']
-                                .skills__item
-                                    .skill
-                                        img(src="assets/img/about-me/skill.png" class="skill__bar")
-                                        .skill__name= val
+                            .skills__item
+                                .skill
+                                    svg
+                                        circle(cx="55" cy="55" r="45" fill="transparent" stroke="#DFDCD5" stroke-width="20")
+                                    svg
+                                        circle(cx="55" cy="55" r="45" fill="transparent" stroke="#E6AD41" stroke-width="20" stroke-dasharray=200, 1000)
+                            //each val in ["JS", "HTMl", 'JavaScript & jQuery']
+                            //    .skills__item
+                            //        .skill
+                            //            img(src="assets/img/about-me/skill.png" class="skill__bar")
+                            //            .skill__name= val
                     .skill-direction
                         .skill-direction__header Backend
                         .skill-direction__skills.skills
