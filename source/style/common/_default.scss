@@ -29,7 +29,6 @@ textarea {
     background-color: #CCC;
 }
 
-
 .heading-block {
     position: absolute;
     top: 80px;
@@ -53,11 +52,10 @@ textarea {
 .heading-block-header {
     margin-bottom: 0;
 
-    &--color-white {
+    &_color-white {
         color: #FFF;
     }
 }
-
 
 .arrow {
     cursor: pointer;

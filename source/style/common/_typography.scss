@@ -15,7 +15,6 @@ h1, h2, h3 {
     }
 }
 
-
 h1 {
     font-size: 4.5rem;
     line-height: 1;
@@ -24,7 +23,6 @@ h1 {
         @include sprite($h1-pouches-left);
         margin-right: 40px;
     }
-
 
     &:after {
         @include sprite($h1-pouches-right);
@@ -52,7 +50,6 @@ h3 {
         @include sprite($h3-pouches-left);
         margin-right: 10px;
     }
-
 
     &:after {
         @include sprite($h3-pouches-right);

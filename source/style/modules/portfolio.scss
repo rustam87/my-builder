@@ -1,9 +1,9 @@
 .portfolio {
 
-   display: flex;
+    display: flex;
 
     &-main-site,
-    &-other-sites{
+    &-other-sites {
         width: 50%;
     }
 
@@ -16,7 +16,6 @@
     }
 
 }
-
 
 .portfolio-other-sites {
     display: flex;
@@ -37,13 +36,11 @@
     }
 }
 
-
 .site-example {
     width: 420px;
     text-align: center;
 
 }
-
 
 .border-block {
     border-top: 1px solid $gray-type-3;

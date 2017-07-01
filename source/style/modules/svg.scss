@@ -1,29 +1,26 @@
 .svg {
 
-
-    &--color-beige {
+    &_color-beige {
         fill: #F5E7DB;
     }
 
-    &--color-white {
+    &_color-white {
         fill: #FFF;
     }
 
-    &--color-gray {
+    &_color-gray {
         fill: #C3CBCD;
     }
 
-    &--color-light-gray {
+    &_color-light-gray {
         fill: #a8a8a5;
     }
 
-    &--color-orange {
+    &_color-orange {
         fill: $orange-type-2;
     }
 
-
-
-    &--hover-color-white {
+    &_hover-color-white {
 
         &:hover {
             fill: #FFF;
@@ -31,7 +28,7 @@
 
     }
 
-    &--hover-color-orange {
+    &_hover-color-orange {
 
         &:hover {
             fill: $orange-type-2;
@@ -39,7 +36,7 @@
 
     }
 
-    &--hover-color-beige {
+    &_hover-color-beige {
 
         &:hover {
             fill: #F5E7DB;
@@ -47,15 +44,13 @@
 
     }
 
-
-    &--hover-color-light-gray {
+    &_hover-color-light-gray {
 
         &:hover {
             opacity: 1;
         }
     }
 }
-
 
 .traingle {
     position: absolute;
