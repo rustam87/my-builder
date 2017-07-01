@@ -1,0 +1,13 @@
+-var pages = {works: 'мои работы', about: 'обо мне', blog: 'блог', index: 'авторизация'}
+
+
+mixin site-menu(currentPage)
+    ul.site-menu
+        each val, page in pages
+            if (page === currentPage)
+                li.site-menu-item.site-menu-item_active
+                    a(href=page + '.html')= val
+            else
+                li.site-menu-item
+                    a(href=page + '.html')= val
+

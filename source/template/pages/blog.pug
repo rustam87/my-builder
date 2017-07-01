@@ -4,12 +4,15 @@ block variables
     - var title = 'Blog page'
 
 block content
+    .btn-menu
+        svg(width=40,height=35, class="svg svg--color-white")
+            use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
     .section-wrapper
+        +site-menu('blog')
         section.user-section.user-section--blog.section
             .user-section__top
                 include ../modules/social.pug
-                svg(width=40,height=35, class="svg svg--color-white")
-                    use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
+
             .user-section__center
                 .user
                     img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")

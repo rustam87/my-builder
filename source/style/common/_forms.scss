@@ -1,5 +1,4 @@
 
-
 .btn {
     display: inline-block;
     padding: 13px 30px;
@@ -34,7 +33,6 @@
 
 .btn-group {
 
-
     .btn {
         border-radius: 0;
 
@@ -47,7 +45,6 @@
         }
     }
 }
-
 
 .form-control {
     background-color: #FFF;
@@ -93,7 +90,6 @@
 
 .form-control-checkbox {
 
-
     &__hidden-field {
         display: none;
     }
@@ -109,19 +105,15 @@
             margin-right: 10px;
         }
     }
-
 }
 
 input[type="checkbox"]:checked + .form-control-checkbox__text::before {
     @include sprite($checkbox-active);
 }
 
-
 .form-control-radio {
     display: inline-block;
     margin-right: 30px;
-
-
 
     &__hidden-field {
         display: none;

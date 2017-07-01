@@ -4,7 +4,11 @@ block variables
     - var title = 'About me page'
 
 block content
+    .btn-menu
+        svg(width=40,height=35, class="svg svg--color-white")
+            use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
     .section-wrapper
+        +site-menu('about')
         section.user-section.section
             .user-section__top
                 .social
@@ -20,8 +24,6 @@ block content
                         a(href="#")
                             svg(width=24,height=22, class="svg svg--color-white svg--hover-color-orange")
                                 use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
-                svg(width=40,height=35, class="svg svg--color-white")
-                    use(xlink:href="assets/img/sprites/svg/sprite.svg#hamburger")
             .user-section__center
                 .user
                     img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
@@ -93,6 +95,8 @@ block content
                         svg(width=24,height=24, class="contacts-item__icon svg svg--color-orange")
                             use(xlink:href="assets/img/sprites/svg/sprite.svg#marker")
                         .contacts-item__text Новосибирск, ул. Инская, д.14
+
+
 
     .footer
         .footer-wrapper

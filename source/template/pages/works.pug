@@ -1,10 +1,11 @@
 extends ../_template
 
 block variables
-    - var title = 'Another page'
+    - var title = 'Works page'
 
 block content
     .section-wrapper
+        +site-menu('works')
         section.user-section.section
             .user-section__top
                 .social
