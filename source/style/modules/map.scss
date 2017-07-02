@@ -2,8 +2,20 @@
     min-height: 984px;
     background: url('../../assets/img/about-me/map.jpg');
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+
+
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
 }
 
 .map-info {

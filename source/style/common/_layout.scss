@@ -14,6 +14,10 @@
         padding: 20px;
         display: flex;
         justify-content: flex-end;
+
+        @include tablet() {
+            visibility: hidden;
+        }
     }
 
     &__central {
@@ -28,6 +32,12 @@
         padding: 20px;
         padding-bottom: 37px;
     }
+
+
+    @include tablet(){
+        overflow: hidden;
+        overflow-y: auto;
+    }
 }
 
 .section-wrapper {
@@ -38,16 +48,20 @@
 .footer {
     position: relative;
     z-index: 1;
-    margin-top: -172px;
     background-color: rgba(55, 62, 66, 0.85);
     padding: 30px;
+    margin-top: 60px;
 
     &-wrapper {
-        width: 1100px;
         min-height: 90px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+
+        @include tablet(){
+            flex-wrap: wrap;
+            width: 100%;
+        }
     }
 }
 
@@ -66,11 +80,16 @@
     }
 
     &:nth-child(2) {
-        width: 468px;
         padding-left: 30px;
         padding-right: 30px;
         border-right: 1px solid #FFF;
         border-left: 1px solid #FFF;
+
+        @include tablet(){
+            width: 50%;
+            border: 0;
+            padding: 0;
+        }
     }
 }
 
@@ -86,12 +105,39 @@
             line-height: 1.5;
         }
     }
+
+    @include tablet(){
+       margin-bottom: 10px;
+    }
+}
+
+.left-column {
+    width: 370px;
+
+    @include tablet(){
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 10px;
+    }
+}
+
+.right-column {
+    @include tablet(){
+        width: 50%;
+        text-align: right;
+    }
 }
 
 .middle-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include tablet(){
+        width: 50%;
+        justify-content: flex-start;
+    }
 }
 
 

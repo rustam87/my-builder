@@ -13,6 +13,12 @@
         display: flex;
         justify-content: flex-start;
     }
+
+    @include tablet() {
+        &__skills {
+            justify-content: center;
+        }
+    }
 }
 
 .skills__item {

@@ -1,5 +1,4 @@
 .portfolio {
-
     display: flex;
 
     &-main-site,
@@ -8,18 +7,37 @@
     }
 
     &-main-site {
-        min-height: 750px;
         background-color: $gray-type-1;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 30px;
     }
 
+    @include tablet(){
+        position: relative;
+        flex-direction: column;
+
+        .portfolio-main-site,
+        .portfolio-other-sites {
+            width: 100%;
+        }
+
+        .portfolio-main-site {
+            position: absolute;
+            top: 525px;
+            left: 0;
+            width: 100%;
+            padding-bottom: 60px;
+        }
+    }
 }
 
 .portfolio-other-sites {
-    display: flex;
-    flex-wrap: wrap;
+
+    @include tablet(){
+        order: -1;
+    }
 
     &__main {
         min-height: 525px;
@@ -28,11 +46,35 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include tablet(){
+            margin-bottom: 300px;
+        }
+
+        img {
+            width: 70%;
+        }
     }
 
     &__other {
-        width: 50%;
-        min-height: 225px;
+        font-size: 0;
+    }
+}
+
+.portfolio-other-sites-img-wrapper {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+
+    &__pic {
+        width: 100%;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -40,6 +82,9 @@
     width: 420px;
     text-align: center;
 
+    @include tablet(){
+        width: 100%;
+    }
 }
 
 .border-block {
@@ -53,5 +98,11 @@
         font-size: 1.16rem;
         color: $orange-type-1;
         text-transform: uppercase;
+    }
+
+    @include tablet(){
+        width: 420px;
+        margin: 40px auto;
+        margin-top: -20px;
     }
 }

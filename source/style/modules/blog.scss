@@ -1,5 +1,6 @@
 .blog {
     display: flex;
+    flex-direction: column;
     padding-top: 70px;
     background-color: $gray-type-7;
 
@@ -7,7 +8,6 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
-        padding-bottom: 200px;
     }
 }
 

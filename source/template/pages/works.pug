@@ -43,7 +43,7 @@ block content
             .portfolio
                 .portfolio-main-site
                     .site-example
-                        h3 Сайт школы онлайн<br> Образования
+                        h3 Сайт школы онлайн Образования
                         .border-block
                             .border-block__text HTML, CSS, JAVASCRIPT
                         a(href="#" class="btn") Посмотреть сайт
@@ -51,9 +51,14 @@ block content
                     .portfolio-other-sites__main
                         img(src="assets/img/works/site-1.png")
                     .portfolio-other-sites__other
-                        img(src="assets/img/works/site-2.jpg")
-                    .portfolio-other-sites__other
-                        img(src="assets/img/works/site-3.jpg")
+                        .portfolio-other-sites-img-wrapper
+                            svg(width=43,height=27, class="svg svg_color-white portfolio-other-sites-img-wrapper__arrow")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_down")
+                            img(src="assets/img/works/site-2.jpg" class="portfolio-other-sites-img-wrapper__pic")
+                        .portfolio-other-sites-img-wrapper
+                            svg(width=43,height=27, class="svg svg_color-white portfolio-other-sites-img-wrapper__arrow")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
+                            img(src="assets/img/works/site-3.jpg" class="portfolio-other-sites-img-wrapper__pic")
         section.about-me-section.section.last
             .header-block
                 svg(class="header-block__bg" )
@@ -92,7 +97,7 @@ block content
             svg(width=26,height=16, class="arrow arrow-up svg svg_color-white svg_hover-color-beige")
                 use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
 
-    include ../modules/footer
+            include ../modules/footer
 
 
 

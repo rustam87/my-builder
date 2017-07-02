@@ -4,6 +4,17 @@
     &-column {
         width: 50%;
     }
+
+    @include tablet() {
+        flex-direction: column;
+
+        .about-me-column {
+            width: 100%;
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+
 }
 
 .about-me-column {
@@ -25,6 +36,10 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        @include tablet() {
+
+        }
     }
 
     &__wrapper {
@@ -42,6 +57,27 @@
         background-color: $gray-type-6;
         padding-left: 40px;
         padding-right: 20px;
+    }
+
+    @include tablet() {
+        flex-direction: column;
+
+        .header-block__bg {
+            display: none;
+        }
+
+        &__wrapper {
+            width: 480px;
+        }
+
+        &_left {
+            justify-content: center;
+        }
+
+        &_right {
+            padding: 0;
+        }
+
     }
 }
 
