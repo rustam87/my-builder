@@ -14,7 +14,7 @@
         padding-bottom: 30px;
     }
 
-    @include tablet(){
+    @include tablet() {
         position: relative;
         flex-direction: column;
 
@@ -35,7 +35,7 @@
 
 .portfolio-other-sites {
 
-    @include tablet(){
+    @include tablet() {
         order: -1;
     }
 
@@ -47,7 +47,7 @@
         justify-content: center;
         align-items: center;
 
-        @include tablet(){
+        @include tablet() {
             margin-bottom: 300px;
         }
 
@@ -82,7 +82,7 @@
     width: 420px;
     text-align: center;
 
-    @include tablet(){
+    @include tablet() {
         width: 100%;
     }
 }
@@ -100,7 +100,7 @@
         text-transform: uppercase;
     }
 
-    @include tablet(){
+    @include tablet() {
         width: 420px;
         margin: 40px auto;
         margin-top: -20px;

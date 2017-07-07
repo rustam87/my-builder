@@ -1,5 +1,5 @@
-@mixin tablet(){
-    @media screen and (max-width: 1024px){
+@mixin tablet() {
+    @media screen and (max-width: 1024px) {
         @content;
     }
 }
@@ -11,9 +11,9 @@ html {
 body {
     font-family: $roboto;
 
-    @include tablet(){
+    @include tablet() {
         overflow-y: auto;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -34,8 +34,6 @@ ul {
 textarea {
     resize: none;
 }
-
-
 
 .stub {
     height: 128px;

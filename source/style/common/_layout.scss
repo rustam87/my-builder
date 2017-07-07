@@ -33,8 +33,7 @@
         padding-bottom: 37px;
     }
 
-
-    @include tablet(){
+    @include tablet() {
         overflow: hidden;
         overflow-y: auto;
     }
@@ -58,7 +57,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include tablet(){
+        @include tablet() {
             flex-wrap: wrap;
             width: 100%;
         }
@@ -85,7 +84,7 @@
         border-right: 1px solid #FFF;
         border-left: 1px solid #FFF;
 
-        @include tablet(){
+        @include tablet() {
             width: 50%;
             border: 0;
             padding: 0;
@@ -106,25 +105,25 @@
         }
     }
 
-    @include tablet(){
-       margin-bottom: 10px;
+    @include tablet() {
+        margin-bottom: 10px;
     }
 }
 
 .left-column {
     width: 370px;
 
-    @include tablet(){
+    @include tablet() {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         padding-bottom: 10px;
     }
 }
 
 .right-column {
-    @include tablet(){
+    @include tablet() {
         width: 50%;
         text-align: right;
     }
@@ -134,7 +133,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include tablet(){
+    @include tablet() {
         width: 50%;
         justify-content: flex-start;
     }
