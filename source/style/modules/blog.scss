@@ -37,6 +37,10 @@
             font-weight: 700;
         }
     }
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .article {
@@ -44,10 +48,6 @@
     padding-bottom: 70px;
     margin-bottom: 70px;
     border-bottom: 5px solid rgba(55, 62, 66, 0.07);
-
-    &__title {
-        margin-bottom: 20px;
-    }
 
     &__date {
         color: $orange-type-1;
@@ -60,12 +60,28 @@
         color: $gray-type-4;
         font-family: $sunsus;
         font-size: 2.5rem;
+        margin-bottom: 20px;
     }
 
     &:last-child {
         padding-bottom: 0;
         margin-bottom: 0;
         border: 0;
+    }
+
+    @include tablet {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+
+        &__title {
+            font-size: 2.14rem;
+            margin-bottom: 8px;
+        }
+
+        &__date {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -40,6 +40,18 @@ h1 {
             @include sprite($h1-pouches-right-white);
         }
     }
+
+    @include tablet() {
+        font-size: 3.5rem;
+
+        &:before {
+            margin-right: 20px;
+        }
+
+        &:after {
+            margin-left: 20px;
+        }
+    }
 }
 
 h3 {
@@ -67,12 +79,20 @@ h3 {
             @include sprite($h3-pouches-right-white);
         }
     }
+
+    @include tablet() {
+        font-size: 2.14rem;
+    }
 }
 
 p {
     font-size: 1.16rem;
     color: $gray-type-4;
     line-height: 1.5;
+
+    @include tablet {
+        font-size: 1rem;
+    }
 }
 
 

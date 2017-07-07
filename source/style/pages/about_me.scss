@@ -14,7 +14,6 @@
             text-align: center;
         }
     }
-
 }
 
 .about-me-column {
@@ -26,6 +25,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-bottom: 30px;
     }
 
@@ -36,10 +36,6 @@
         position: absolute;
         top: 0;
         left: 0;
-
-        @include tablet() {
-
-        }
     }
 
     &__wrapper {
@@ -50,7 +46,6 @@
         display: flex;
         justify-content: center;
         background-color: $gray-type-5;
-
     }
 
     &_right {
@@ -62,23 +57,50 @@
     @include tablet() {
         flex-direction: column;
 
+        .header-block {
+            margin-bottom: 22px;
+            width: 320px;
+            height: 88px;
+        }
+
         .header-block__bg {
-            display: none;
+            height: 88px;
         }
 
         &__wrapper {
             width: 480px;
+
+            p {
+                text-align: left;
+            }
         }
 
         &_left {
-            justify-content: center;
+            align-items: center;
         }
 
         &_right {
             padding: 0;
+            padding-top: 20px;
         }
-
     }
+}
+
+.biography {
+    img {
+        width: 100%;
+    }
+}
+
+.about-me-column-right-header {
+    margin-bottom: 0;
+}
+
+.about-me-column-right-text {
+    margin: 10px auto;
+    margin-bottom: 50px;
+    width: 470px;
+    text-align: left;
 }
 
 

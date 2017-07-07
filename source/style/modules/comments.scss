@@ -3,10 +3,14 @@
     width: 750px;
     margin: 0 auto;
     justify-content: space-between;
+
+    @include tablet {
+        width: 716px;
+    }
 }
 
 .comment {
-    width: 363px;
+    width: 50%;
 
     &__text {
         padding-top: 56px;
@@ -22,7 +26,18 @@
             @include sprite($citate);
             top: 0;
             left: 0;
-
         }
     }
+
+    @include tablet {
+        width: 716px;
+
+        &__text {
+            font-size: 1rem;
+        }
+    }
+}
+
+.comment + .comment {
+    margin-left: 35px;
 }

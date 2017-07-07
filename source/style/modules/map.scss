@@ -25,4 +25,8 @@
     &__title {
         margin-top: 0;
     }
+
+    @include tablet {
+        width: 346px;
+    }
 }

@@ -56,8 +56,12 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+    }
 
-        @include tablet() {
+    @include tablet() {
+        margin-top: 50px;
+
+        &-wrapper {
             flex-wrap: wrap;
             width: 100%;
         }

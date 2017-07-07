@@ -24,5 +24,12 @@
             width: 50%;
         }
 
+        .btn + .btn {
+            margin-left: 2px;
+        }
+    }
+
+    @include tablet {
+        width: 350px;
     }
 }

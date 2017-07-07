@@ -66,6 +66,7 @@ body {
         margin-top: 30px;
         position: relative;
         display: flex;
+        justify-content: center;
     }
 
     .header-block__bg {
@@ -79,6 +80,10 @@ body {
 
     @include tablet() {
         min-height: 1215px;
+
+        .arrow {
+            margin-top: 50px;
+        }
     }
 }
 
@@ -92,6 +97,7 @@ body {
         margin: 0 auto;
         position: relative;
         display: flex;
+        justify-content: center;
     }
 
     .header-block__bg {

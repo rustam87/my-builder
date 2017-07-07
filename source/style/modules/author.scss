@@ -19,5 +19,9 @@
         color: $orange-type-1;
         font-weight: 400;
     }
+
+    @include tablet() {
+        font-size: 1rem;
+    }
 }
 

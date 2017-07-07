@@ -102,20 +102,21 @@ block content
             .about-me-column.about-me-column_left
                 .about-me-column__wrapper
                     .header-block
-                        svg(class="header-block__bg" )
+                        svg(class="header-block__bg")
                             use(xlink:href="assets/img/sprites/svg/sprite.svg#about_header")
-                        h1 Обо мне
-                    img(class="" src="http://via.placeholder.com/443x390", alt="Фото")
-                    h3 Кто я
-                    p
-                        | Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов
-                        | и приложений. Мне нравится делать интересные и современные проекты.
-                    p
-                        | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу
-                        | в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                        h1.header-block__title Обо мне
+                    .biography
+                        img(class="biography__pic" src="http://via.placeholder.com/443x390", alt="Фото")
+                        h3 Кто я
+                        p
+                            | Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов
+                            | и приложений. Мне нравится делать интересные и современные проекты.
+                        p
+                            | Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу
+                            | в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
             .about-me-column.about-me-column_right
-                h3 Чем я могу быть<br>вам полезен
-                p
+                h3.about-me-column-right-header Чем я могу быть<br>вам полезен
+                p.about-me-column-right-text
                     | Больше всего меня привлекет Frontend разработка, но я также знаком
                     | и могу решать не сложные задачи на Backend. Но давайте по порядку.
                 .skills-block

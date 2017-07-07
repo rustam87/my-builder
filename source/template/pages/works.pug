@@ -63,10 +63,11 @@ block content
             .header-block
                 svg(class="header-block__bg" )
                     use(xlink:href="assets/img/sprites/svg/sprite.svg#about_header")
-                h1 Что обо мне<br>говорят
+                h1.header-block__title Что обо мне<br>говорят
             .comments.about-me-section__comments
                 .comment
-                    .comment__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только                   самых тяжелых испытаний и бессонных ночей!
+                    .comment__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца
+                        | только самых тяжелых испытаний и бессонных ночей!
                     .author
                         .author-pic
                             img(src="assets/img/works/author-1.png")
@@ -75,7 +76,8 @@ block content
                             .author-describe__position основатель Loftschool
 
                 .comment
-                    .comment__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только                   самых тяжелых испытаний и бессонных ночей!
+                    .comment__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на
+                        | слишком старых браузерах!
                     .author
                         .author-pic
                             img(src="assets/img/works/author-2.png")

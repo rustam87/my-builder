@@ -35,10 +35,6 @@
 
 .portfolio-other-sites {
 
-    @include tablet() {
-        order: -1;
-    }
-
     &__main {
         min-height: 525px;
         width: 100%;
@@ -48,7 +44,7 @@
         align-items: center;
 
         @include tablet() {
-            margin-bottom: 300px;
+            margin-bottom: 270px;
         }
 
         img {
@@ -58,6 +54,10 @@
 
     &__other {
         font-size: 0;
+    }
+
+    @include tablet() {
+        order: -1;
     }
 }
 
