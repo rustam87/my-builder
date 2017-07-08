@@ -84,11 +84,36 @@
             padding-top: 20px;
         }
     }
+
+    @include mobile {
+        &__wrapper {
+            width: 100%;
+        }
+
+        &_left {
+            p {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        &_right {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
 }
 
 .biography {
-    img {
+    &__pic {
         width: 100%;
+    }
+
+    @include mobile {
+
+        &__pic {
+            width: 100%;
+        }
     }
 }
 
@@ -101,6 +126,10 @@
     margin-bottom: 50px;
     width: 470px;
     text-align: left;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 

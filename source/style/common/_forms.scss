@@ -29,6 +29,11 @@
             color: #000;
         }
     }
+
+    @include mobile() {
+        padding: 11px 20px;
+        font-size: 1rem;
+    }
 }
 
 .btn-group {
@@ -130,7 +135,6 @@ input[type="checkbox"]:checked + .form-control-checkbox__text::before {
             margin-right: 10px;
         }
     }
-
 }
 
 input[type="checkbox"]:checked + .form-control-radio__text::before {

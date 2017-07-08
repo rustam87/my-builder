@@ -23,10 +23,19 @@
             justify-content: center;
         }
     }
+
+    @include mobile{
+        margin-bottom: 0;
+    }
 }
 
 .skills__item {
     display: flex;
+
+    @include mobile {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
 .skill {
@@ -57,10 +66,18 @@
             size: 1.07rem;
         }
     }
+
+    @include mobile{
+        margin-bottom: 30px;
+    }
 }
 
 .skill + .skill {
     margin-left: 40px;
+
+    @include mobile{
+        margin-left: 0;
+    }
 }
 
 

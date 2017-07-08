@@ -14,10 +14,6 @@
         padding: 20px;
         display: flex;
         justify-content: flex-end;
-
-        @include tablet() {
-            visibility: hidden;
-        }
     }
 
     &__central {
@@ -36,6 +32,16 @@
     @include tablet() {
         overflow: hidden;
         overflow-y: auto;
+    }
+
+    @include mobile(){
+        &__top {
+            justify-content: center;
+        }
+
+        &__central {
+            width: 300px;
+        }
     }
 }
 
@@ -66,6 +72,11 @@
             width: 100%;
         }
     }
+
+    @include mobile {
+        margin-top: 30px;
+        padding: 20px 10px;
+    }
 }
 
 .footer-column {
@@ -74,12 +85,12 @@
         opacity: 0.5;
         font-size: 1.16rem;
         line-height: 1.5;
+        margin-bottom: 4px;
     }
 
     &__text_color-white {
         color: #FFF;
         opacity: 1;
-        margin-bottom: 4px;
     }
 
     &:nth-child(2) {
@@ -87,11 +98,27 @@
         padding-right: 30px;
         border-right: 1px solid #FFF;
         border-left: 1px solid #FFF;
+    }
 
-        @include tablet() {
+    @include tablet {
+
+        &:nth-child(2) {
             width: 50%;
             border: 0;
             padding: 0;
+        }
+    }
+
+    @include mobile {
+        &__text {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
     }
 }
@@ -109,8 +136,26 @@
         }
     }
 
-    @include tablet() {
+    &__item + &__item {
+        margin-left: 20px;
+    }
+
+    @include tablet {
         margin-bottom: 10px;
+    }
+
+    @include mobile {
+        justify-content: center;
+
+        &__item {
+            a {
+                font-size: 1rem;
+            }
+        }
+
+        &__item + &__item {
+            margin-left: 10px;
+        }
     }
 }
 
@@ -124,12 +169,22 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         padding-bottom: 10px;
     }
+
+    @include mobile {
+        margin-bottom: 15px;
+        padding-bottom: 0;
+    }
 }
 
 .right-column {
     @include tablet() {
         width: 50%;
         text-align: right;
+    }
+
+    @include mobile {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -140,6 +195,11 @@
     @include tablet() {
         width: 50%;
         justify-content: flex-start;
+    }
+
+    @include mobile {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 

@@ -19,4 +19,12 @@
     &_center {
         justify-content: center;
     }
+
+    @include mobile {
+        .footer & {
+            justify-content: center;
+        }
+    }
+
+
 }

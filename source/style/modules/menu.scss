@@ -15,6 +15,18 @@
                 background-color: $brown-darken;
             }
         }
+
+        &:first-child {
+            a {
+                border-bottom-left-radius: 5px;
+            }
+        }
+
+        &:last-child {
+            a {
+                border-bottom-right-radius: 5px;
+            }
+        }
     }
 
     &__title {
@@ -28,5 +40,16 @@
 
     &__item_width-50 {
         width: 50%;
+    }
+
+    @include mobile {
+
+        &__item {
+
+            a {
+                padding: 14px 22px;
+                font-size: 1rem;
+            }
+        }
     }
 }
