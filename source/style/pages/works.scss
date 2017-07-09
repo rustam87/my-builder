@@ -20,7 +20,7 @@ body {
     &__top {
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        padding: 30px;
     }
 
     &__bottom {
@@ -40,6 +40,28 @@ body {
         background: url($src_img_path + '/blog/user-section-blog-bg.jpg') 50%;
         background-size: cover;
         min-height: 400px;
+    }
+
+    @include tablet {
+        min-height: 505px;
+
+        &_blog {
+            background: url($src_img_path + '/blog/user-section-blog-bg-tablet.jpg') no-repeat 50% 50%;
+            background-size: cover
+        }
+    }
+
+    @include mobile {
+        min-height: 590px;
+
+        &__top {
+            padding: 15px;
+        }
+
+        &_blog {
+            background: url($src_img_path + '/blog/user-section-blog-bg-mobile.jpg') no-repeat 50% 50%;
+            background-size: cover
+        }
     }
 }
 

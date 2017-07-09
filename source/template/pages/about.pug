@@ -16,7 +16,7 @@ block variables
                     value: 110
                 },
                 {
-                    name: 'Javascript</br>Jquery',
+                    name: 'Javascript' + $<br> + 'Jquery',
                     color: '#e6ad41',
                     value: 250
                 }
@@ -72,19 +72,7 @@ block content
         +site-menu('about')
         section.user-section.section
             .user-section__top
-                .social
-                    .social__item
-                        a(href="#")
-                            svg(width=31,height=17, class="svg svg_color-white svg_hover-color-orange")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
-                    .social__item
-                        a(href="#")
-                            svg(width=26,height=22, class="svg svg_color-white svg_hover-color-orange")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
-                    .social__item
-                        a(href="#")
-                            svg(width=24,height=22, class="svg svg_color-white svg_hover-color-orange")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
+                include ../modules/social
             .user-section__center
                 svg(class="user-bg" viewBox="0 0 1176 313" preserveAspectRatio="none")
                     use(xlink:href="assets/img/sprites/svg/sprite.svg#portfolio_header")
