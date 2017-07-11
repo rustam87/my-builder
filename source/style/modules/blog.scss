@@ -18,14 +18,36 @@
 .blog-menu-wrapper {
     max-width: 270px;
     margin-right: 100px;
+
+    @include tablet {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        transform: translate(-100%, 0);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        max-width: 300px;
+        margin-right: 0;
+        z-index: 2;
+        background-color: $orange-type-3;
+        transition: transform 0.5s;
+
+        &_open {
+            transform: translate(0, 0);
+        }
+    }
 }
 
 .blog-menu {
     text-align: right;
+    position: sticky;
+    top: 20px;
 
     &__item {
         margin-bottom: 35px;
         padding-right: 17px;
+        border-right: 3px solid transparent;
 
         a {
             font-size: 1.16rem;
@@ -40,20 +62,12 @@
 
         a {
             color: $orange-type-1;
-            font-weight: 700;
+            text-shadow: 0 0 0 $orange-type-1
         }
     }
 
     @include tablet {
-        position: absolute;
-        left: 100%;
-        top: 0;
-        bottom: 200px;
-        max-width: 300px;
-        margin-right: 0;
-        z-index: 2;
-        background-color: #F1A528;
-        padding-top: 600px;
+        position: static;
 
         &__item {
             a {
@@ -61,9 +75,15 @@
             }
         }
 
+        &__item_active {
+            a {
+                text-shadow: 0 0 0 #FFF;
+            }
+        }
     }
 
     @include mobile {
+        position: static;
     }
 }
 
@@ -119,3 +139,21 @@
     }
 }
 
+
+.blog-menu-btn {
+    display: none;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    background-color: $orange-type-3;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-70%, 0);
+    cursor: pointer;
+
+    @include tablet {
+        display: block;
+    }
+}

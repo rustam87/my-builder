@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     background: rgba(231, 167, 49, .8);
-    z-index: 2;
+    z-index: 3;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -89,10 +89,14 @@
     position: absolute;
     right: 34px;
     top: 28px;
-    z-index: 3;
+    z-index: 4;
     cursor: pointer;
     width: 40px;
     height: 35px;
+
+    .open-menu & {
+        right: 49px;
+    }
 
     &__line {
         height: 5px;
@@ -138,11 +142,22 @@
         }
     }
 
+    @include tablet {
+        .open-menu & {
+            right: 34px;
+        }
+    }
+
+
     @include mobile {
         right: 10px;
         top: 10px;
         width: 25px;
         height: 22px;
+
+        .open-menu & {
+            right: 10px;
+        }
 
         &__line {
             height: 4px;
