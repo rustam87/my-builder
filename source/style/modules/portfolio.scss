@@ -14,7 +14,7 @@
         padding-bottom: 30px;
     }
 
-    @include tablet() {
+    @include tablet {
         position: relative;
         flex-direction: column;
 
@@ -32,7 +32,7 @@
         }
     }
 
-    @include mobile() {
+    @include mobile {
         &-main-site {
             top: 260px;
             padding-bottom: 30px;
@@ -59,7 +59,7 @@
         font-size: 0;
     }
 
-    @include tablet() {
+    @include tablet {
         order: -1;
 
         &__main {
@@ -67,7 +67,7 @@
         }
     }
 
-    @include mobile() {
+    @include mobile {
         &__main {
             min-height: 260px;
             margin-bottom: 230px;
@@ -100,7 +100,7 @@
     width: 420px;
     text-align: center;
 
-    @include tablet() {
+    @include tablet {
         width: 100%;
     }
 }
@@ -118,13 +118,13 @@
         text-transform: uppercase;
     }
 
-    @include tablet() {
+    @include tablet {
         width: 420px;
         margin: 40px auto;
         margin-top: -20px;
     }
 
-    @include mobile() {
+    @include mobile {
         width: 98%;
         margin: 20px auto;
 
@@ -136,7 +136,7 @@
 
 .site-example {
 
-    @include mobile() {
+    @include mobile {
 
         &__header {
             width: 320px;

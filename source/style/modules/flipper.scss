@@ -1,7 +1,6 @@
 .flip-container {
     perspective: 1000px;
-    height: 360px;
-
+    min-height: 360px;
 }
 
 .flipper {
@@ -15,7 +14,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 380px;
+        min-width: 380px;
         padding-top: 40px;
         background-color: rgba(215, 191, 155, 0.6);
     }
@@ -31,5 +30,13 @@
 
     &_rotate-180 {
         transform: rotateY(180deg);
+    }
+
+    @include mobile {
+
+        &__front,
+        &__back {
+            min-width: 300px;
+        }
     }
 }

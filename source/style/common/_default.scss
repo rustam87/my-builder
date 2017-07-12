@@ -9,7 +9,7 @@ body {
         overflow: hidden;
     }
 
-    @include tablet() {
+    @include tablet {
         overflow-y: auto;
         overflow-x: hidden;
     }
