@@ -1,6 +1,7 @@
 // COMMMON
 @import 'common/_normalize';
 @import 'common/_variables';
+@import 'common/_color';
 @import 'common/sprite-raster';
 @import 'common/_media';
 @import 'common/_typography';
@@ -8,6 +9,7 @@
 @import 'common/_fonts';
 @import 'common/_layout';
 @import 'common/_forms';
+
 // MODULES
 @import 'modules/user';
 @import 'modules/text';
@@ -24,12 +26,8 @@
 @import 'modules/blog';
 @import 'modules/site-menu';
 @import 'modules/flipper';
+
 // PAGES
 @import 'pages/index';
 @import 'pages/works';
 @import 'pages/about_me';
-
-
-
-
-

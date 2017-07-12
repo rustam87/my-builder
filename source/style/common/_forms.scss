@@ -9,7 +9,7 @@
     border-radius: 5px;
     text-decoration: none;
     color: #FFF;
-    transition: visibility 0.1s;
+    transition: visibility;
 
     &:focus {
         outline: none;
@@ -73,9 +73,7 @@
     }
 
     &__field {
-        padding: 14px 20px;
-        padding-bottom: 13px;
-        padding-left: 20px;
+        padding: 14px 20px 13px;
         display: block;
         width: calc(100% - 45px);
         border: none;
@@ -151,13 +149,3 @@ input[type="checkbox"]:checked + .form-control-radio__text::before {
     justify-content: center;
     margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
