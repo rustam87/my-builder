@@ -132,12 +132,12 @@
         }
 
         .middle-line_left {
-            transform: translate(-100%,0);
+            transform: translate(-100%, 0);
             opacity: 0;
         }
 
         .middle-line_right {
-            transform: translate(100%,0);
+            transform: translate(100%, 0);
             opacity: 0;
         }
     }
@@ -147,7 +147,6 @@
             right: 34px;
         }
     }
-
 
     @include mobile {
         right: 10px;

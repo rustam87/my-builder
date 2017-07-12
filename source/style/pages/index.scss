@@ -3,7 +3,6 @@
     background-size: cover;
 }
 
-
 .line {
     display: flex;
 
@@ -12,7 +11,7 @@
         margin-right: 5px;
     }
 
-    @include mobile (){
+    @include mobile () {
         &__element {
             &:first-child {
                 display: none;

@@ -108,7 +108,7 @@ body {
         }
     }
 
-    @include mobile (){
+    @include mobile () {
         .header-block {
             width: 300px;
             height: 88px;

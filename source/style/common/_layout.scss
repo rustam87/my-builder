@@ -18,7 +18,6 @@
 
     &__central {
         width: 380px;
-        background-color: $light-brown;
         padding-top: 40px;
         border-radius: 5px;
     }
@@ -34,7 +33,7 @@
         overflow-y: auto;
     }
 
-    @include mobile(){
+    @include mobile() {
         &__top {
             justify-content: center;
         }

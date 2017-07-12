@@ -9,6 +9,7 @@
     border-radius: 5px;
     text-decoration: none;
     color: #FFF;
+    transition: visibility 0.1s;
 
     &:focus {
         outline: none;
@@ -28,6 +29,10 @@
             background-color: #FFF;
             color: #000;
         }
+    }
+
+    &_hide {
+        visibility: hidden;
     }
 
     @include mobile() {

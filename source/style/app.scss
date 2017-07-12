@@ -8,8 +8,6 @@
 @import 'common/_fonts';
 @import 'common/_layout';
 @import 'common/_forms';
-
-
 // MODULES
 @import 'modules/user';
 @import 'modules/text';
@@ -25,8 +23,7 @@
 @import 'modules/contacts';
 @import 'modules/blog';
 @import 'modules/site-menu';
-
-
+@import 'modules/flipper';
 // PAGES
 @import 'pages/index';
 @import 'pages/works';

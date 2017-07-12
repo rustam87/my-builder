@@ -1,7 +1,13 @@
 module.exports = {
-    entry: './source/js/app.js',
+    context: __dirname + '/source/js/',
+    entry: {
+        common: './common.js',
+        index:  './pages/index.js',
+        blog:   './pages/blog.js'
+    },
     output: {
-        filename: './build/assets/js/app.js'
+        path: __dirname + '/build/assets/js/',
+        filename: '[name].js'
     },
     module: {
         rules: [
@@ -16,5 +22,6 @@ module.exports = {
             }
         ]
     },
+    devtool: 'source-map',
     watch: true
 };
