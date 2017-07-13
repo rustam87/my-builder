@@ -4,6 +4,7 @@
 *.err
 *.exe
 *.log
+*.lock
 *.orig
 *.rej
 *.sass-cache
