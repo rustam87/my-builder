@@ -1,0 +1,46 @@
+.map {
+    min-height: 984px;
+    background: url('../../assets/img/about-me/map.jpg');
+    display: flex;
+    flex-direction: column;
+
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+
+    @include mobile {
+        &-wrapper {
+            align-items: flex-start;
+        }
+    }
+}
+
+.map-info {
+    width: 380px;
+    padding: 35px 40px;
+    background-color: rgba(252, 252, 252, 0.85);
+
+    &__title {
+        margin-top: 0;
+    }
+
+    @include tablet {
+        width: 346px;
+    }
+
+    @include mobile {
+        background-color: #FFF;
+
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+}

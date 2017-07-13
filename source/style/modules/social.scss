@@ -1,0 +1,62 @@
+.social {
+    display: flex;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: block;
+            font-weight: 500;
+        }
+    }
+
+    &__link + &__link {
+        margin-left: 30px;
+    }
+
+    &_center {
+        justify-content: center;
+    }
+
+    @include mobile {
+        .footer & {
+            justify-content: center;
+        }
+    }
+}
+
+.social-type {
+    &__vk {
+        width: 31px;
+        height: 17px;
+    }
+
+    &__github {
+        width: 26px;
+        height: 22px;
+    }
+
+    &__in {
+        width: 24px;
+        height: 22px;
+    }
+
+    @include mobile {
+        &__vk {
+            width: 25px;
+            height: 14px;
+        }
+
+        &__github {
+            width: 21px;
+            height: 18px;
+        }
+
+        &__in {
+            width: 19px;
+            height: 18px;
+        }
+    }
+}

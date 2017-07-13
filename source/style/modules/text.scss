@@ -1,0 +1,27 @@
+.text {
+    display: flex;
+    text-align: center;
+    font-size: 1.16rem;
+
+    &_white {
+        color: #FFF;
+    }
+
+    @include mobile {
+        font-size: 1rem;
+        font-weight: 300;
+        flex-direction: column;
+
+        &__author {
+            margin-bottom: 10px;
+        }
+
+        .footer & {
+            text-align: center;
+
+            &__author {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

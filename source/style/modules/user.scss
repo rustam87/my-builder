@@ -1,0 +1,75 @@
+.user {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #FFF;
+
+    &__pic {
+        border-radius: 50%;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 1.16rem;
+    }
+
+    &__social {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    @include mobile {
+        &__title {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+        }
+    }
+}
+
+.user-auth {
+    color: #FFF;
+    text-align: center;
+
+    &__form {
+        padding: 0 20px;
+    }
+
+    &__title {
+        margin-top: 0;
+        color: #FFF;
+    }
+
+    &__check {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &__check-repeat {
+        margin-bottom: 30px;
+    }
+}
+
+.user-bg {
+    max-width: 1175px;
+    position: absolute;
+    z-index: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $orange-type-1;
+    opacity: 0.1;
+}

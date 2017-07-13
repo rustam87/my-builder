@@ -1,0 +1,33 @@
+.index {
+    background: url($src_img_path + '/index/bg.jpg') 50%;
+    background-size: cover;
+}
+
+.line {
+    display: flex;
+
+    &__element {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    @include mobile () {
+        &__element {
+            &:first-child {
+                display: none;
+            }
+        }
+    }
+
+    .footer & {
+        @include mobile {
+            display: block;
+            text-align: center;
+
+            &__element,
+            &__text {
+                display: inline-block;
+            }
+        }
+    }
+}

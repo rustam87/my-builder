@@ -1,0 +1,90 @@
+extends ../_template
+
+block variables
+    - var title = 'Works page'
+
+block content
+    include ../modules/btn-menu
+    .section-wrapper
+        +site-menu('works')
+        section.user-section
+            .user-section__top
+                include ../modules/social
+            .user-section__center
+                svg(class="user-bg" viewBox="0 0 1176 313" preserveAspectRatio="none")
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#portfolio_header")
+                .user
+                    img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
+                    .user__title Аблызалов Рустам
+                    .user__subtitle Личный сайт веб разработчика
+            .user-section__bottom
+                svg(width=26,height=16, class="arrow arrow-down svg svg_color-white svg_hover-color-beige")
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_down")
+                svg(class="traingle", xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85")
+                    polygon(class="left" points="0,0   0,86   500.8,86   500.8,84")
+                    polygon(class="right" points="1000,0   1000,86   500,86   500,84")
+        section.porfolio-section
+            .header-block
+                svg(class="header-block__bg" )
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#works_header")
+                h1 Мои работы
+            .portfolio
+                .portfolio-main-site
+                    .site-example
+                        h3.site-example__header Сайт школы онлайн Образования
+                        .site-example__describe.border-block
+                            .border-block__text HTML, CSS, JAVASCRIPT
+                        a(href="#" class="btn site-example__btn") Посмотреть сайт
+                .portfolio-other-sites
+                    .portfolio-other-sites__main
+                        img(src="assets/img/works/site-1.png")
+                    .portfolio-other-sites__other
+                        .portfolio-other-sites-img-wrapper
+                            svg(width=43,height=27, class="svg svg_color-white portfolio-other-sites-img-wrapper__arrow")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_down")
+                            img(src="assets/img/works/site-2.jpg" class="portfolio-other-sites-img-wrapper__pic")
+                        .portfolio-other-sites-img-wrapper
+                            svg(width=43,height=27, class="svg svg_color-white portfolio-other-sites-img-wrapper__arrow")
+                                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
+                            img(src="assets/img/works/site-3.jpg" class="portfolio-other-sites-img-wrapper__pic")
+        section.about-me-section
+            .header-block
+                svg(class="header-block__bg" )
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#about_header")
+                h1.header-block__title Что обо мне<br>говорят
+            .comments.about-me-section__comments
+                .comment
+                    .comment__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца
+                        | только самых тяжелых испытаний и бессонных ночей!
+                    .author
+                        .author-pic
+                            img(src="assets/img/works/author-1.png")
+                        .author-describe
+                            .author-describe__name Ковальчук Дмитрий
+                            .author-describe__position основатель Loftschool
+
+                .comment
+                    .comment__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на
+                        | слишком старых браузерах!
+                    .author
+                        .author-pic
+                            img(src="assets/img/works/author-2.png")
+                        .author-describe
+                            .author-describe__name Сабанцев Владимир
+                            .author-describe__position преподаватель
+            form.callback-form
+                h3.callback-form__title Связаться со мной
+                .callback-form__form
+                    .form-control
+                        input(placeholder="Имя").form-control__field.form-control__field_width-100
+                    .form-control
+                        input(placeholder="Email").form-control__field.form-control__field_width-100
+                    .form-control
+                        textarea(placeholder="Ваше сообщение").form-control__field.form-control__field_width-100
+                .callback-form__buttons-block.btn-group
+                    button.btn Отправить
+                    button.btn Очистить
+            svg(width=26,height=16, class="arrow arrow-up svg svg_color-white svg_hover-color-beige")
+                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
+
+            include ../modules/footer

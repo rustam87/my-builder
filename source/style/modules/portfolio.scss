@@ -1,0 +1,153 @@
+.portfolio {
+    display: flex;
+
+    &-main-site,
+    &-other-sites {
+        width: 50%;
+    }
+
+    &-main-site {
+        background-color: $gray-type-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    @include tablet {
+        position: relative;
+        flex-direction: column;
+
+        &-main-site,
+        &-other-sites {
+            width: 100%;
+        }
+
+        &-main-site {
+            position: absolute;
+            top: 525px;
+            left: 0;
+            width: 100%;
+            padding-bottom: 60px;
+        }
+    }
+
+    @include mobile {
+        &-main-site {
+            top: 260px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.portfolio-other-sites {
+
+    &__main {
+        min-height: 525px;
+        width: 100%;
+        background-color: $gray-type-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    &__other {
+        font-size: 0;
+    }
+
+    @include tablet {
+        order: -1;
+
+        &__main {
+            margin-bottom: 270px;
+        }
+    }
+
+    @include mobile {
+        &__main {
+            min-height: 260px;
+            margin-bottom: 230px;
+
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
+
+.portfolio-other-sites-img-wrapper {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+
+    &__pic {
+        width: 100%;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.site-example {
+    width: 420px;
+    text-align: center;
+
+    @include tablet {
+        width: 100%;
+    }
+}
+
+.border-block {
+    border-top: 1px solid $gray-type-3;
+    border-bottom: 1px solid $gray-type-3;
+    padding: 15px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+    &__text {
+        font-size: 1.16rem;
+        color: $orange-type-1;
+        text-transform: uppercase;
+    }
+
+    @include tablet {
+        width: 420px;
+        margin: 40px auto;
+        margin-top: -20px;
+    }
+
+    @include mobile {
+        width: 98%;
+        margin: 20px auto;
+
+        &__text {
+            font-size: 1rem;
+        }
+    }
+}
+
+.site-example {
+
+    @include mobile {
+
+        &__header {
+            width: 320px;
+            margin: 0 auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__btn {
+            width: 160px;
+        }
+    }
+}

@@ -1,7 +1,88 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+    - var title = 'Home page'
 
 block content
-  include ../common/_greating
+
+    .fullpage.index
+        .fullpage__top
+           a(data-btn-add-flip).btn.btn_auth Авторизоваться
+        .fullpage__central
+            .flip-container
+                .flipper(data-flip-block)
+                    .flipper__front
+                        .user
+                            img(class="user__pic" src="http://via.placeholder.com/141x141", alt="Фото")
+                            .user__title Аблызалов Рустам
+                            .user__subtitle Личный сайт веб разработчика
+                            .user__social
+                                .social.social_center
+                                    .social__item
+                                        a(href="#")
+                                            svg(width=31,height=17, class="svg svg_color-beige svg_hover-color-white")
+                                                use(xlink:href="assets/img/sprites/svg/sprite.svg#vk")
+                                    .social__item
+                                        a(href="#")
+                                            svg(width=26,height=22, class="svg svg_color-beige svg_hover-color-white")
+                                                use(xlink:href="assets/img/sprites/svg/sprite.svg#github")
+                                    .social__item
+                                        a(href="#")
+                                            svg(width=24,height=22, class="svg svg_color-beige svg_hover-color-white")
+                                                use(xlink:href="assets/img/sprites/svg/sprite.svg#in")
+                        ul.menu
+                            li.menu__item
+                                a(href="works.html") Мои работы
+                            li.menu__item
+                                a(href="about.html") Обо мне
+                            li.menu__item
+                                a(href="blog.html") Блог
+                    .flipper__back
+                        form.user-auth
+                            h3.user-auth__title.white Авторизуйтесь
+                            .user-auth__form
+                                .user-auth__login
+                                    .form-control
+                                        .form-control__icon
+                                            svg(width=31,height=17, class="svg svg_color-gray")
+                                                use(xlink:href="assets/img/sprites/svg/sprite.svg#login")
+                                        input(placeholder="Логин").form-control__field
+                                .user-auth__pass
+                                    .form-control
+                                        .form-control__icon
+                                            svg(width=31,height=17, class="svg svg_color-gray")
+                                                use(xlink:href="assets/img/sprites/svg/sprite.svg#password")
+                                        input(placeholder="Пароль").form-control__field
+                                .user-auth__check
+                                    label.form-control-checkbox
+                                        input(type="checkbox").form-control-checkbox__hidden-field
+                                        .form-control-checkbox__text.label
+                                            span.label__text_ Я не робот
+                                .user-auth__check-repeat
+                                    div.question Вы точно не робот?
+                                    .form-control-group-radio
+                                        label.form-control-radio
+                                            input(type="checkbox" name="group1").form-control-radio__hidden-field
+                                            .form-control-radio__text.label
+                                                span.label__text_ Да
+                                        label.form-control-radio
+                                            input(type="checkbox" name="group1").form-control-radio__hidden-field
+                                            .form-control-radio__text.label
+                                                span.label__text_ Не уверен
+                            ul.menu
+                                li.menu__item.menu__item_width-50
+                                    a(href="#" class="link-block") На главную
+                                li.menu__item.menu__item_width-50
+                                    a(href="#" class="link-block") Войти
+
+
+        .fullpage__bottom
+            .text.text_color_white
+                .text__author © Аблызалов Рустам
+                .text__anotate.line
+                    .line__element |
+                    .line__text создано с любовью в LoftSchool
+                    .line__element |
+                    .line__text 2016
+
+    script(src='assets/js/index.js' defer)

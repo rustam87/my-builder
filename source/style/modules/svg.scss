@@ -1,0 +1,60 @@
+.svg {
+
+    &_color-beige {
+        fill: #F5E7DB;
+    }
+
+    &_color-white {
+        fill: #FFF;
+    }
+
+    &_color-gray {
+        fill: #C3CBCD;
+    }
+
+    &_color-light-gray {
+        fill: #a8a8a5;
+    }
+
+    &_color-orange {
+        fill: $orange-type-2;
+    }
+
+    &_hover-color-white {
+
+        &:hover {
+            fill: #FFF;
+        }
+    }
+
+    &_hover-color-orange {
+
+        &:hover {
+            fill: $orange-type-2;
+        }
+    }
+
+    &_hover-color-beige {
+
+        &:hover {
+            fill: #F5E7DB;
+        }
+    }
+
+    &_hover-color-light-gray {
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.traingle {
+    position: absolute;
+    bottom: 0;
+    fill: $gray-type-7;
+
+    &__header {
+        position: absolute;
+    }
+}

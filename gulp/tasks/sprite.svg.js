@@ -1,8 +1,10 @@
 'use strict';
 
+const imgSpritePath = $.config.root + '/assets/img/sprites/svg/';
+
 module.exports = function() {
   $.gulp.task('sprite:svg', function() {
-    return $.gulp.src('./source/sprite/*.svg')
+    return $.gulp.src('./source/images/icons/svg/*.svg')
       .pipe($.gp.svgmin({
         js2svg: {
           pretty: true
@@ -24,6 +26,6 @@ module.exports = function() {
           }
         }
       }))
-      .pipe($.gulp.dest($.config.root + '/assets/img'))
+      .pipe($.gulp.dest($.config.root + '/assets/img/sprites/svg'))
   })
 };

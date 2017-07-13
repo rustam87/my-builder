@@ -1,0 +1,55 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        a {
+            color: #FFF;
+            padding: 14px 31px;
+            font-size: 1.16rem;
+            background-color: $brown;
+            display: inline-block;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $brown-darken;
+            }
+        }
+
+        &:first-child {
+            a {
+                border-bottom-left-radius: 5px;
+            }
+        }
+
+        &:last-child {
+            a {
+                border-bottom-right-radius: 5px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: 1.16rem;
+    }
+
+    &__item_width-50 {
+        width: 50%;
+    }
+
+    @include mobile {
+
+        &__item {
+
+            a {
+                padding: 14px 22px;
+                font-size: 1rem;
+            }
+        }
+    }
+}

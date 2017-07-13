@@ -8,10 +8,11 @@ module.exports = function () {
     $.gulp.task('sprite:raster', function () {
 
         var spriteData =
-            $.gulp.src('./source/images/icons/*.*')
+            $.gulp.src('./source/images/icons/raster/*.*')
 
             .pipe($.gp.spritesmith({
                 imgName: 'sprite.png',
+                imgPath: '../img/sprites/raster/sprite.png',
                 cssName: 'sprite-raster.scss'
             }))
 

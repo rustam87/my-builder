@@ -1,0 +1,44 @@
+.callback-form {
+    margin: 0 auto;
+    width: 380px;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__form {
+        padding: 20px;
+        padding-top: 0;
+
+        textarea {
+            min-height: 140px;
+        }
+    }
+
+    &__buttons-block {
+        display: flex;
+
+        .btn {
+            width: 50%;
+        }
+
+        .btn + .btn {
+            margin-left: 2px;
+        }
+    }
+
+    @include tablet {
+        width: 350px;
+    }
+
+    @include mobile {
+        width: 300px;
+
+        .btn {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}

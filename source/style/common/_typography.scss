@@ -1,0 +1,120 @@
+
+h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $darken-gray;
+    text-transform: uppercase;
+    font-family: $sunsus;
+    font-weight: 400;
+    text-align: center;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+    }
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+
+    &:before {
+        @include sprite($h1-pouches-left);
+        margin-right: 40px;
+    }
+
+    &:after {
+        @include sprite($h1-pouches-right);
+        margin-left: 40px;
+    }
+
+    &.white {
+        color: #FFF;
+
+        &:before {
+            @include sprite($h1-pouches-left-white);
+        }
+
+        &:after {
+            @include sprite($h1-pouches-right-white);
+        }
+    }
+
+    @include tablet {
+        font-size: 3.5rem;
+
+        &:before {
+            margin-right: 20px;
+        }
+
+        &:after {
+            margin-left: 20px;
+        }
+    }
+
+    @include mobile {
+        font-size: 2.5rem;
+
+        &:before {
+            margin-right: 10px;
+        }
+
+        &:after {
+            margin-left: 10px;
+        }
+    }
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 1.17;
+
+    &:before {
+        @include sprite($h3-pouches-left);
+        margin-right: 10px;
+    }
+
+    &:after {
+        @include sprite($h3-pouches-right);
+        margin-left: 10px;
+    }
+
+    &.white {
+        color: #FFF;
+
+        &:before {
+            @include sprite($h3-pouches-left-white);
+        }
+
+        &:after {
+            @include sprite($h3-pouches-right-white);
+        }
+    }
+
+    @include tablet {
+        font-size: 2.14rem;
+    }
+
+    @include mobile {
+        font-size: 1.5rem;
+
+        &:before {
+            margin-right: 10px;
+        }
+
+        &:after {
+            margin-left: 10px;
+        }
+    }
+}
+
+p {
+    font-size: 1.16rem;
+    color: $gray-type-4;
+    line-height: 1.5;
+
+    @include tablet {
+        font-size: 1rem;
+    }
+}

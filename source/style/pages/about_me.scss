@@ -1,0 +1,133 @@
+.about-me {
+    display: flex;
+
+    &-column {
+        width: 50%;
+    }
+
+    @include tablet {
+        flex-direction: column;
+
+        .about-me-column {
+            width: 100%;
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+}
+
+.about-me-column {
+    margin-top: -30px;
+
+    .header-block {
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .header-block__bg {
+        width: 100%;
+        fill: #cd8920;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__wrapper {
+        width: 445px;
+    }
+
+    &_left {
+        display: flex;
+        justify-content: center;
+        background-color: $gray-type-5;
+    }
+
+    &_right {
+        background-color: $gray-type-6;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+
+        .header-block {
+            margin-bottom: 22px;
+            width: 320px;
+            height: 88px;
+        }
+
+        .header-block__bg {
+            height: 88px;
+        }
+
+        &__wrapper {
+            width: 480px;
+
+            p {
+                text-align: left;
+            }
+        }
+
+        &_left {
+            align-items: center;
+        }
+
+        &_right {
+            padding: 0;
+            padding-top: 20px;
+        }
+    }
+
+    @include mobile {
+        &__wrapper {
+            width: 100%;
+        }
+
+        &_left {
+            p {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        &_right {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.biography {
+    &__pic {
+        width: 100%;
+    }
+
+    @include mobile {
+
+        &__pic {
+            width: 100%;
+        }
+    }
+}
+
+.about-me-column-right-header {
+    margin-bottom: 0;
+}
+
+.about-me-column-right-text {
+    margin: 10px auto;
+    margin-bottom: 50px;
+    width: 470px;
+    text-align: left;
+
+    @include mobile {
+        width: 100%;
+    }
+}
