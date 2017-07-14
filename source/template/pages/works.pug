@@ -28,25 +28,41 @@ block content
                 svg(class="header-block__bg" )
                     use(xlink:href="assets/img/sprites/svg/sprite.svg#works_header")
                 h1 Мои работы
-            .portfolio
-                .portfolio-main-site
-                    .site-example
-                        h3.site-example__header Сайт школы онлайн Образования
-                        .site-example__describe.border-block
-                            .border-block__text HTML, CSS, JAVASCRIPT
-                        a(href="#" class="btn site-example__btn") Посмотреть сайт
-                .portfolio-other-sites
-                    .portfolio-other-sites__main
-                        img(src="assets/img/works/site-1.png")
-                    .portfolio-other-sites__other
-                        .portfolio-other-sites-img-wrapper
-                            svg(width=43,height=27, class="svg svg_color-white portfolio-other-sites-img-wrapper__arrow")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_down")
-                            img(src="assets/img/works/site-2.jpg" class="portfolio-other-sites-img-wrapper__pic")
-                        .portfolio-other-sites-img-wrapper
-                            svg(width=43,height=27, class="svg svg_color-white portfolio-other-sites-img-wrapper__arrow")
-                                use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
-                            img(src="assets/img/works/site-3.jpg" class="portfolio-other-sites-img-wrapper__pic")
+            .gallery
+                .gallery-describe
+                    h3.gallery-describe__header Сайт школы онлайн Образования
+                    .gallery-describe__text HTML, CSS, JAVASCRIPT
+                    a(href="#" class="btn") Посмотреть сайт
+                .gallery-preview
+                    img(src="assets/img/works/site-1.png")
+                .gallery-slider
+                    .slider(data-slider)
+                        .slider-wrapper
+                            .slider-left(data-slider-left)
+                                .slider-track(data-slider-track)
+                                    .slider-item(data-number=1, data-slider-item)
+                                        .number 1
+                                    .slider-item(data-number=2, data-slider-item)
+                                        .number 2
+                                    .slider-item(data-number=3, data-slider-item)
+                                        .number 3
+                                    .slider-item(data-number=4, data-slider-item)
+                                        .number 4
+                            .slider-right(data-slider-right)
+                                .slider-track(data-slider-track)
+                                    .slider-item(data-number=1, data-slider-item)
+                                        .number 1
+                                    .slider-item(data-number=2, data-slider-item)
+                                        .number 2
+                                    .slider-item(data-number=3, data-slider-item)
+                                        .number 3
+                                    .slider-item(data-number=4, data-slider-item)
+                                        .number 4
+
+                        .slider-prev(data-slider-prev)
+                        .slider-next(data-slider-prev)
+
+
         section.about-me-section
             .header-block
                 svg(class="header-block__bg" )
@@ -88,3 +104,5 @@ block content
                 use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
 
             include ../modules/footer
+
+        script(src='assets/js/works.js' defer)

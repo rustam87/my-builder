@@ -3,7 +3,8 @@ module.exports = {
     entry: {
         common: './common.js',
         index:  './pages/index.js',
-        blog:   './pages/blog.js'
+        blog:   './pages/blog.js',
+        works:  './pages/works.js'
     },
     output: {
         path: __dirname + '/build/assets/js/',

@@ -1,5 +1,4 @@
 
-
 (function () {
     const body        = document.body;
     const btnMenu     = document.querySelector('.btn-menu');
