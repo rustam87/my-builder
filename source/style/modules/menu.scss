@@ -57,3 +57,36 @@
         }
     }
 }
+
+.menu-auth {
+    &__link,
+    &__btn {
+        color: #FFF;
+        padding: 14px 31px;
+        font-size: 1.16rem;
+        background-color: $brown;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 100%;
+        font-weight: 700;
+
+
+        &:hover {
+            background-color: $brown-darken;
+        }
+    }
+
+    @include mobile {
+
+        &__link,
+        &__btn {
+            font-size: 1.16rem;
+        }
+
+        a {
+            font-size: 1.16rem;
+        }
+    }
+}
+

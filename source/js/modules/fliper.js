@@ -7,7 +7,7 @@ class Flip {
             event.stopPropagation();
             event.preventDefault();
             this.btnAddFlip.classList.add('btn_hide');
-            this.showFront();
+            this.showBack();
 
         });
 
@@ -19,17 +19,17 @@ class Flip {
             }
 
             this.btnAddFlip.classList.remove('btn_hide');
-            this.showBack();
+            this.showFront();
 
         });
     }
 
     showFront() {
-        this.flipBlock.classList.add('flipper_rotate-180');
+        this.flipBlock.classList.remove('flipper_rotate-180');
     }
 
     showBack (){
-        this.flipBlock.classList.remove('flipper_rotate-180');
+        this.flipBlock.classList.add('flipper_rotate-180');
     }
 
 }
