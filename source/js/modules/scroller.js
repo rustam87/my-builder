@@ -59,7 +59,6 @@ class Scroller {
         let elTop = element.offsetTop;
         elTop = elTop + 5;
         window.scrollTo(0, elTop);
-        //window.location.hash = element.getAttribute('id');
     }
 }
 

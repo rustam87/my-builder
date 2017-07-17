@@ -7,9 +7,11 @@ class Validate {
                 event.preventDefault();
                 let isValid = this.validate(form[i]);
 
-                if(!isValid) {
-                    return false;
+                if(isValid) {
+                    // Ajax
                 }
+
+                return false;
             });
         }
     }

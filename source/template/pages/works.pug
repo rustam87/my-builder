@@ -19,7 +19,7 @@ block content
                     .user__subtitle Личный сайт веб разработчика
             .user-section__bottom
                 svg(width=26,height=16, class="arrow arrow-down svg svg_color-white svg_hover-color-beige")
-                    use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_down")
+                    use(xlink:href="assets/img/sprites/svg/sprite.svg#arrow")
                 svg(class="traingle", xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85")
                     polygon(class="left" points="0,0   0,86   500.8,86   500.8,84")
                     polygon(class="right" points="1000,0   1000,86   500,86   500,84")
@@ -28,39 +28,31 @@ block content
                 svg(class="header-block__bg" )
                     use(xlink:href="assets/img/sprites/svg/sprite.svg#works_header")
                 h1 Мои работы
-            .gallery
-                .gallery-describe
-                    h3.gallery-describe__header Сайт школы онлайн Образования
-                    .gallery-describe__text HTML, CSS, JAVASCRIPT
-                    a(href="#" class="btn") Посмотреть сайт
-                .gallery-preview
-                    img(src="assets/img/works/site-1.png")
-                .gallery-slider
-                    .slider(data-slider)
-                        .slider-wrapper
-                            .slider-left(data-slider-left)
-                                .slider-track(data-slider-track)
-                                    .slider-item(data-number=1, data-slider-item)
-                                        .number 1
-                                    .slider-item(data-number=2, data-slider-item)
-                                        .number 2
-                                    .slider-item(data-number=3, data-slider-item)
-                                        .number 3
-                                    .slider-item(data-number=4, data-slider-item)
-                                        .number 4
-                            .slider-right(data-slider-right)
-                                .slider-track(data-slider-track)
-                                    .slider-item(data-number=1, data-slider-item)
-                                        .number 1
-                                    .slider-item(data-number=2, data-slider-item)
-                                        .number 2
-                                    .slider-item(data-number=3, data-slider-item)
-                                        .number 3
-                                    .slider-item(data-number=4, data-slider-item)
-                                        .number 4
-
-                        .slider-prev(data-slider-prev)
-                        .slider-next(data-slider-prev)
+            .slider(data-slider)
+                .slider-track(data-slider-track)
+                    .slider-item.slider-item_active(data-slider-item)
+                        .slider-item__pic
+                            img(src="assets/img/works/site-1.png")
+                        .slider-item__describe Сайт школы онлайн Образования
+                    .slider-item(data-slider-item)
+                        .slider-item__pic
+                            img(src="assets/img/works/site-1.png")
+                        .slider-item__describe Cтраница 2
+                    .slider-item(data-slider-item)
+                        .slider-item__pic
+                            img(src="assets/img/works/site-1.png")
+                        .slider-item__describe Cтраница 3
+                    .slider-item(data-slider-item)
+                        .slider-item__pic
+                            img(src="assets/img/works/site-1.png")
+                        .slider-item__describe Cтраница 4
+                .slider-btn.slider-btn_next(data-slider-btn-next)
+                    svg.slider-btn__next
+                        use(xlink:href="assets/img/sprites/svg/sprite.svg#arrow")
+                .slider-btn.slider-btn_prev(data-slider-btn-prev)
+                    svg.slider-btn__prev
+                        use(xlink:href="assets/img/sprites/svg/sprite.svg#arrow")
+                .slider-dots
 
 
         section.about-me-section
