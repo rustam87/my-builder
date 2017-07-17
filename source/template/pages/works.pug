@@ -88,18 +88,21 @@ block content
                         .author-describe
                             .author-describe__name Сабанцев Владимир
                             .author-describe__position преподаватель
-            form.callback-form
+            form.callback-form(data-validate-form, action="/" method="POST")
                 h3.callback-form__title Связаться со мной
                 .callback-form__form
                     .form-control
-                        input(placeholder="Имя").form-control__field.form-control__field_width-100
+                        .error-message.error-message_top(data-error-block)
+                        input(placeholder="Имя" data-valid data-error-text="Вы не ввели имя").form-control__field.form-control__field_width-100
                     .form-control
-                        input(placeholder="Email").form-control__field.form-control__field_width-100
+                        .error-message.error-message_bottom(data-error-block)
+                        input(placeholder="Email" data-valid data-error-text="Вы не ввели email").form-control__field.form-control__field_width-100
                     .form-control
-                        textarea(placeholder="Ваше сообщение").form-control__field.form-control__field_width-100
+                        .error-message.error-message_bottom(data-error-block)
+                        textarea(placeholder="Ваше сообщение" data-valid data-error-text="Вы не ввели сообщение").form-control__field.form-control__field_width-100
                 .callback-form__buttons-block.btn-group
                     button.btn Отправить
-                    button.btn Очистить
+                    button.btn(type="reset") Очистить
             svg(width=26,height=16, class="arrow arrow-up svg svg_color-white svg_hover-color-beige")
                 use(xlink:href="assets/img/sprites/svg/sprite.svg#portf_arrow_up")
 

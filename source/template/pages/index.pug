@@ -47,30 +47,28 @@ block content
                                         .form-control__icon
                                             svg(width=31,height=17)
                                                 use(xlink:href="assets/img/sprites/svg/sprite.svg#login")
-                                        input(placeholder="Логин" data-valid data-error-text="Вы не ввели логин" data-error-direction="top").form-control__field
+                                        input(placeholder="Логин" data-valid data-error-text="Вы не ввели логин").form-control__field
                                 .user-auth__pass
                                     .form-control
                                         .error-message.error-message_bottom(data-error-block)
                                         .form-control__icon
                                             svg(width=31,height=17)
                                                 use(xlink:href="assets/img/sprites/svg/sprite.svg#password")
-                                        input(type="password" placeholder="Пароль" data-valid data-error-text="Вы не ввели пароль" data-error-direction="top").form-control__field
+                                        input(type="password" placeholder="Пароль" data-valid data-error-text="Вы не ввели пароль").form-control__field
                                 .user-auth__check
                                     label.form-control-checkbox
-                                        .error-message.error-message_bottom(data-error-block)
-                                        input(type="checkbox" required="required" data-valid data-error-text="Вы не заполнили поле Логин" data-error-direction="top").form-control-checkbox__hidden-field
+                                        input(type="checkbox" required="required").form-control-checkbox__hidden-field
                                         .form-control-checkbox__text.label
                                             span.label__text_ Я не робот
                                 .user-auth__check-repeat
                                     div.question Вы точно не робот?
                                     .form-control-group-radio
-                                        .error-message.error-message_bottom(data-error-block)
                                         label.form-control-radio
-                                            input(type="radio" name="group1" required="required" data-valid data-error-text="Вы не заполнили поле Логин" data-error-direction="top").form-control-radio__hidden-field
+                                            input(type="radio" name="group1" required="required").form-control-radio__hidden-field
                                             .form-control-radio__text.label
                                                 span.label__text_ Да
                                         label.form-control-radio
-                                            input(type="radio" name="group1" data-valid data-error-text="Вы не заполнили поле Логин" data-error-direction="top").form-control-radio__hidden-field
+                                            input(type="radio" name="group1" required="required").form-control-radio__hidden-field
                                             .form-control-radio__text.label
                                                 span.label__text_ Не уверен
                             ul.menu.menu-auth
