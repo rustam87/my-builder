@@ -30,29 +30,49 @@ block content
                 h1 Мои работы
             .slider(data-slider)
                 .slider-track(data-slider-track)
-                    .slider-item.slider-item_active(data-slider-item)
-                        .slider-item__pic
-                            img(src="assets/img/works/site-1.png")
-                        .slider-item__describe Сайт школы онлайн Образования
-                    .slider-item(data-slider-item)
-                        .slider-item__pic
-                            img(src="assets/img/works/site-1.png")
-                        .slider-item__describe Cтраница 2
-                    .slider-item(data-slider-item)
-                        .slider-item__pic
-                            img(src="assets/img/works/site-1.png")
-                        .slider-item__describe Cтраница 3
-                    .slider-item(data-slider-item)
-                        .slider-item__pic
-                            img(src="assets/img/works/site-1.png")
-                        .slider-item__describe Cтраница 4
+                    .slider-item.slider-item_active(data-slider-item="1")
+                        .slider-item-pic
+                            img(src="assets/img/works/prokatstroi.jpg")
+                        .slider-item-describe
+                            .slider-item-describe-wrapper
+                                .slider-item-describe-header Сайт аренды инструментов
+                                .slider-item-describe-body HTML, CSS, JAVASCRIPT, PHP, MYSQL
+                                .slider-item-describe-footer
+                                    a(href="http://prokatstroi.ru").btn
+                                        svg.btn__icon
+                                            use(xlink:href="assets/img/sprites/svg/sprite.svg#link")
+                                        .btn__text Посмотреть сайт
+                    .slider-item(data-slider-item="2")
+                        .slider-item-pic
+                            img(src="assets/img/works/bank.jpg")
+                        .slider-item-describe
+                            .slider-item-describe-wrapper
+                                .slider-item-describe-header Сайт о банках Нижнего Новгорода
+                                .slider-item-describe-body HTML, CSS, JAVASCRIPT, GULP, GIT
+                                .slider-item-describe-footer
+                                    a(href="http://banknn.ru").btn
+                                        svg.btn__icon
+                                            use(xlink:href="assets/img/sprites/svg/sprite.svg#link")
+                                        .btn__text Посмотреть сайт
+                    .slider-item(data-slider-item="3")
+                        .slider-item-pic
+                            img(src="assets/img/works/vgoroden.jpg")
+                        .slider-item-describe
+                            .slider-item-describe-wrapper
+                                .slider-item-describe-header Сайт о новостях Нижнего Новгорода
+                                .slider-item-describe-body HTML, CSS, JAVASCRIPT, GULP, BOWER
+                                .slider-item-describe-footer
+                                    a(href="http://vgoroden.ru").btn
+                                        svg.btn__icon
+                                            use(xlink:href="assets/img/sprites/svg/sprite.svg#link")
+                                        .btn__text Посмотреть сайт
                 .slider-btn.slider-btn_next(data-slider-btn-next)
                     svg.slider-btn__next
                         use(xlink:href="assets/img/sprites/svg/sprite.svg#arrow")
                 .slider-btn.slider-btn_prev(data-slider-btn-prev)
                     svg.slider-btn__prev
                         use(xlink:href="assets/img/sprites/svg/sprite.svg#arrow")
-                .slider-dots
+                .slider-dots(data-slider-dots)
 
 
         section.about-me-section
