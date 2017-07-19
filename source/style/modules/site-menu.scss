@@ -30,6 +30,10 @@
         font-family: $sunsus;
     }
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &_active {
         &:before {
             content: '';
