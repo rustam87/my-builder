@@ -138,6 +138,7 @@ block content
                                             circle(cx="55" cy="55" r="45" fill="transparent" stroke="#DFDCD5" stroke-width="20")
                                             circle(cx="55" cy="55" r="45" fill="transparent" stroke=skill.color stroke-width="20" stroke-dasharray=skill.value + ',300')
         section.map
+            #map
             .map-wrapper
                 .map-info
                     h3.map-info__title Контакты
@@ -159,3 +160,5 @@ block content
                                 use(xlink:href="assets/img/sprites/svg/sprite.svg#marker")
                             .contacts-item__text Новосибирск, ул. Инская, д.14
             include ../modules/footer
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src='assets/js/about.js' defer)

@@ -4,7 +4,8 @@ module.exports = {
         common: './common.js',
         index:  './pages/index.js',
         blog:   './pages/blog.js',
-        works:  './pages/works.js'
+        works:  './pages/works.js',
+        about:  './pages/about.js'
     },
     output: {
         path: __dirname + '/build/assets/js/',
